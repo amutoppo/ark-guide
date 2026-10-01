@@ -2,24 +2,24 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="ARK ASA 序盤から中盤のおすすめ生物16種。サドル解放レベル、テイム手順、餌、用途を調べるオフライン攻略ツール。">
+<meta name="description" content="ARK ASA 序盤から終盤のおすすめ生物28種。サドル解放レベル、テイム手順、餌、用途を調べるオフライン攻略ツール。">
 <title>ARK FIELD GUIDE — テイム攻略手帳</title>
 <style>
 :root{color-scheme:dark;--bg:#0c1319;--panel:#141f28;--line:#2c3d48;--text:#e8eef0;--muted:#a5b5be;--cyan:#75dfd1;--gold:#f4c378}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 "Yu Gothic UI","Meiryo",sans-serif}a{color:var(--cyan);text-underline-offset:4px}button,input,select{font:inherit}button,select,input[type=search],input[type=number]{background:#0c151d;color:var(--text);border:1px solid var(--line);border-radius:6px;padding:10px 12px}button{cursor:pointer}button:hover{border-color:var(--cyan)}:focus-visible{outline:3px solid var(--gold);outline-offset:4px}input[type=checkbox]{accent-color:var(--cyan);width:18px;height:18px;flex-shrink:0}header{border-bottom:1px solid var(--line)}.top{max-width:1440px;margin:auto;padding:28px 36px 22px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{color:var(--cyan);font-size:14px;letter-spacing:.16em;font-weight:700}h1{font-size:clamp(24px,3vw,34px);letter-spacing:.04em;line-height:1.35;margin:6px 0 8px}h2{font-size:22px;margin:0}h3{font-size:21px;line-height:1.5;margin:0}p{margin:0 0 12px}.muted{color:var(--muted)}.meta{font-size:14px;color:var(--muted)}.pill{display:inline-block;padding:3px 10px;border:1px solid var(--line);border-radius:99px;font-size:14px}.layout{max-width:1440px;margin:auto;padding:28px 36px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px}.sidebar{align-self:start;position:sticky;top:20px}.sidebar h2{font-size:17px}.route{list-style:none;padding:0;margin:16px 0 26px}.route li{border-left:2px solid var(--line);padding:0 0 22px 18px;position:relative}.route li:last-child{padding-bottom:0}.route li:before{content:"";position:absolute;width:8px;height:8px;background:var(--cyan);left:-5px;top:9px;border-radius:50%}.route strong{display:block;font-size:16px}.route .meta{display:block;margin-top:3px}.levelbox{border-top:1px solid var(--line);padding-top:20px}.levelbox label{display:block;margin-bottom:8px}.levelbox input{width:100%}.progress{height:5px;background:var(--line);margin:12px 0}.progress span{display:block;height:100%;background:var(--cyan);transition:width .2s}.controls{background:var(--panel);border:1px solid var(--line);padding:20px;border-radius:8px}.search{width:100%;margin-bottom:14px}.filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.filters label{font-size:14px;color:var(--muted)}.filters select{display:block;width:100%;margin-top:4px}.subfilters{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:14px}.check{display:flex;align-items:center;gap:8px;cursor:pointer}.subfilters .check{font-size:14px}.reset{padding:6px 12px;font-size:14px;margin-left:auto}.hint{padding:13px 16px;border-left:3px solid var(--gold);background:#211f1c;color:#dfd6c5;margin:20px 0;font-size:14px}.results-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:22px 0 16px}.results-head h2{font-size:19px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.creature{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden}.creature.done{border-color:#406e67}.cardhead{padding:20px 20px 12px;display:flex;justify-content:space-between;gap:12px}.eyebrow{color:var(--cyan);font-size:13px;letter-spacing:.06em;margin-bottom:6px}.en{font-size:13px;color:var(--muted);font-family:ui-monospace,monospace}.saddle{color:var(--gold);font:700 25px/1.2 ui-monospace,monospace;white-space:nowrap;text-align:right}.saddle small{display:block;font:12px/1.6 "Meiryo",sans-serif;color:var(--muted);margin-top:5px}.saddle.none{font-size:18px}.cardbody{padding:0 20px 16px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 12px}.tag{font-size:13px;color:var(--muted);background:#0c151d;padding:2px 8px;border-radius:4px}.use{margin-bottom:12px}.brief{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}.brief strong{color:var(--text)}.levelstate{font-size:13px;color:var(--gold);margin-top:8px}.levelstate.ready{color:var(--cyan)}details{border-top:1px solid var(--line)}summary{cursor:pointer;padding:12px 20px;font-size:14px;color:var(--cyan)}.detail{padding:4px 20px 18px;font-size:15px}.detail h4{font-size:14px;color:var(--cyan);margin:12px 0 5px}.detail ol{margin:0;padding-left:22px}.detail li{margin-bottom:7px}.warn{border-left:2px solid var(--gold);padding-left:12px;margin-top:14px;color:#e6cfa5}.sources{display:flex;gap:12px;flex-wrap:wrap;font-size:13px;margin-top:14px}.cardfoot{border-top:1px solid var(--line);padding:11px 20px;font-size:14px;background:#111b23}.empty{padding:30px;border:1px dashed var(--line);text-align:center;grid-column:1/-1}.reference{margin-top:32px;padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.reference h2{font-size:18px;margin-bottom:12px}.reference ul{padding-left:22px;margin:8px 0}.reference li{margin-bottom:8px}.reference p{font-size:14px}.footer{border-top:1px solid var(--line);padding:20px 36px;font-size:13px;color:var(--muted);text-align:center}.noscript{padding:24px;background:#402a20}.storage{color:var(--gold);font-size:13px}.printbtn{font-size:14px} @media(max-width:1100px){.layout{grid-template-columns:200px minmax(0,1fr);gap:22px;padding:24px}.top{padding:24px}.grid{grid-template-columns:1fr}}@media(max-width:720px){.top{align-items:start;padding:20px;flex-wrap:wrap;gap:12px}.layout{display:flex;flex-direction:column;padding:20px;gap:14px}.sidebar{display:contents;position:static}.sidebar>h2,.sidebar>p{order:3}.sidebar>.route{order:4}.sidebar>.levelbox{order:1;border-top:0;padding-top:0}main{order:2;min-width:0}.route{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}.route li{padding-bottom:8px}.levelbox{margin-bottom:20px}.levelbox input{max-width:150px}.filters{grid-template-columns:1fr}.subfilters{gap:12px}.results-head{align-items:start;flex-direction:column}.saddle{font-size:23px}.cardhead{padding:16px}.cardbody{padding:0 16px 14px}h3{font-size:20px}.reference{padding:16px}}@media print{color-scheme:light;body{background:white;color:black;font-size:11pt}.top,.layout{padding:10px}.layout{display:block}.sidebar,.controls,.hint,.printbtn,.cardfoot,.levelstate,.footer{display:none}.grid{display:block}.creature{background:white;color:black;break-inside:avoid;margin-bottom:15px;border-color:#aaa}.detail{display:block!important;color:black}details{display:block}details:not([open])>.detail{display:block!important}summary{display:none}.muted,.meta,.en,.tag,.brief,.saddle,.saddle small,.eyebrow,.detail h4,.warn,a{color:black}.cardhead,.cardbody,.detail{padding:10px}.reference{background:white;color:black;break-before:page}.tag{background:white}.results-head{margin:10px 0}}
 </style>
 </head>
 <body>
-<header><div class="top"><div><div class="brand">ARK / FIELD GUIDE</div><h1>次に仲間にする、16種。</h1><p class="muted">序盤の採取から、中盤の輸送・洞窟攻略まで。</p><div class="meta">ASA · The Island中心 · Lv1〜62 · 調査日 2026.10.01</div></div><div><span class="pill">テイム攻略手帳</span> <button class="printbtn" id="print">印刷 / PDF</button></div></div></header>
+<header><div class="top"><div><div class="brand">ARK / FIELD GUIDE</div><h1>次に仲間にする、28種。</h1><p class="muted">序盤の採取から、終盤のボス戦・子育てまで。</p><div class="meta">ASA · The Island中心 · サドル Lv9〜96 · 調査日 2026.10.01</div></div><div><span class="pill">テイム攻略手帳</span> <button class="printbtn" id="print">印刷 / PDF</button></div></div></header>
 <noscript><div class="noscript">この攻略ツールの表示にはJavaScriptを有効にしてください。</div></noscript>
 <div class="layout">
-<aside class="sidebar"><h2>攻略の目標</h2><p class="meta">用途をつなぐ、おすすめの順番</p><ol class="route"><li><strong>まず採取を楽に</strong><span class="meta">モスコプス / パラサウロロフス<br>繊維・ベリーを確保</span></li><li><strong>石と金属の基盤</strong><span class="meta">ドエディクルス Lv34<br>アンキロサウルス Lv36</span></li><li><strong>初めての空へ</strong><span class="meta">プテラノドン Lv38<br>探索と次のテイム準備</span></li><li><strong>洞窟の相棒</strong><span class="meta">バリオニクス Lv49<br>魚肉・装備も準備</span></li><li><strong>採取と輸送を接続</strong><span class="meta">アルゲンタヴィス Lv62<br>採取生物ごと運ぶ</span></li></ol><div class="levelbox"><label for="level">あなたのサバイバーレベル</label><input id="level" type="number" min="1" max="200" value="1" inputmode="numeric"><p class="meta" id="level-summary"></p><div class="progress"><span id="progress"></span></div><p class="meta" id="completion"></p><p class="meta">テイム済みチェックはこのブラウザに保存します。</p><p id="storage" class="storage" role="status"></p></div></aside>
+<aside class="sidebar"><h2>攻略の目標</h2><p class="meta">用途をつなぐ、おすすめの順番</p><ol class="route"><li><strong>まず採取を楽に</strong><span class="meta">モスコプス / パラサウロロフス<br>繊維・ベリーを確保</span></li><li><strong>石と金属の基盤</strong><span class="meta">ドエディクルス Lv34<br>アンキロサウルス Lv36</span></li><li><strong>初めての空へ</strong><span class="meta">プテラノドン Lv38<br>探索と次のテイム準備</span></li><li><strong>洞窟の相棒</strong><span class="meta">バリオニクス Lv49<br>魚肉・装備も準備</span></li><li><strong>採取と輸送を接続</strong><span class="meta">アルゲンタヴィス Lv62<br>採取生物ごと運ぶ</span></li><li><strong>ボス用の部隊づくり</strong><span class="meta">テリジノ Lv69 / ティラノ Lv74<br>ユウティラヌス Lv80で支援</span></li><li><strong>海と繁殖を強化</strong><span class="meta">アンコウで真珠採取<br>ギガントラプトル Lv69</span></li></ol><div class="levelbox"><label for="level">あなたのサバイバーレベル</label><input id="level" type="number" min="1" max="200" value="1" inputmode="numeric"><p class="meta" id="level-summary"></p><div class="progress"><span id="progress"></span></div><p class="meta" id="completion"></p><p class="meta">テイム済みチェックはこのブラウザに保存します。</p><p id="storage" class="storage" role="status"></p></div></aside>
 <main>
-<section class="controls" aria-label="生物を絞り込む"><label for="search" class="meta">名前・素材・用途・テイム方法で検索</label><input class="search" id="search" type="search" placeholder="例：金属、洞窟、手渡し、アルゲ" autocomplete="off"><div class="filters"><label>用途<select id="role"><option value="all">すべての用途</option><option>採取</option><option>移動</option><option>運搬</option><option>戦闘</option><option>洞窟</option><option>農業</option><option>卵・繁殖</option><option>拠点生産</option><option>温度対策</option></select></label><label>動画の範囲<select id="stage"><option value="all">序盤 + 中盤</option><option value="early">序盤動画の6種</option><option value="mid">中盤動画の10種</option></select></label><label>並べ替え<select id="sort"><option value="route">攻略の進めやすさ順</option><option value="level">サドルレベル順</option><option value="video">動画の紹介順 / ランキング順</option><option value="name">名前順</option></select></label></div><div class="subfilters"><label class="check"><input type="checkbox" id="unlocked">サドル解放済み・サドル不要のみ</label><label class="check"><input type="checkbox" id="untamed">未テイムのみ</label><button id="reset" class="reset">絞り込みを解除</button></div></section>
+<section class="controls" aria-label="生物を絞り込む"><label for="search" class="meta">名前・素材・用途・テイム方法で検索</label><input class="search" id="search" type="search" placeholder="例：金属、洞窟、手渡し、アルゲ" autocomplete="off"><div class="filters"><label>用途<select id="role"><option value="all">すべての用途</option><option>採取</option><option>移動</option><option>運搬</option><option>戦闘</option><option>洞窟</option><option>農業</option><option>卵・繁殖</option><option>拠点生産</option><option>温度対策</option><option>海中</option><option>ボス戦</option><option>回復</option></select></label><label>動画の範囲<select id="stage"><option value="all">序盤 + 中盤 + 終盤</option><option value="early">序盤動画の6種</option><option value="mid">中盤動画の10種</option><option value="late">終盤動画の13種（重複整理）</option></select></label><label>並べ替え<select id="sort"><option value="route">攻略の進めやすさ順</option><option value="level">サドルレベル順</option><option value="video">動画の紹介順 / ランキング順</option><option value="name">名前順</option></select></label></div><div class="subfilters"><label class="check"><input type="checkbox" id="unlocked">サドル解放済み・サドル不要のみ</label><label class="check"><input type="checkbox" id="untamed">未テイムのみ</label><button id="reset" class="reset">絞り込みを解除</button></div></section>
 <p class="hint">「Lv」はサドルのエングラム解放に必要なサバイバーレベルです。テイム自体の必須レベルではありません。サドル不要の生物も、餌や生息地の準備が必要です。</p>
 <div class="results-head"><h2 id="result-count" aria-live="polite"></h2><span class="meta">カードを開くと、餌・捕獲手順・注意点を表示</span></div>
 <section id="grid" class="grid" aria-label="おすすめ生物一覧"></section>
 <section class="reference"><h2>捕まえる前に</h2><p><strong>昏睡テイム：</strong>麻酔で気絶させ、インベントリに餌を入れて自然に食べるのを待ちます。餌の強制使用でテイムは進みません。気絶値が下がったら麻酔薬などを強制使用し、昏睡中の生物を追加攻撃しないようにします。</p><p><strong>手渡しテイム：</strong>生物ごとの専用手順で餌を渡します。昏睡させる必要はありません。カワウソは魚肉ではなく、引きずった魚の死体を渡します。</p><p><strong>必要数・時間：</strong>野生個体のレベル、武器の品質、サーバー倍率、シングルプレイ設定で変わります。カードのDododexで条件を合わせて計算し、餌と麻酔には余裕を持たせてください。旧Mobile専用のキブル表はASA向けではありません。</p><p><strong>環境による差：</strong>飛行生物の利用・野生生物の掴み・洞窟への持ち込みはマップとサーバー設定で変わります。採取ペットの空輸を前提にする場合は、掴みの設定も確認してください。</p></section>
-<section class="reference" id="references"><h2>参考資料と編集方針</h2><ul><li><a href="https://www.youtube.com/watch?v=ey47ewXfSOg" target="_blank" rel="noopener noreferrer">【Lv1〜30編】序盤にテイムせよ！初心者おすすめ恐竜6選</a> — 自動字幕で紹介生物と用途を確認。プテラノドンのサドルはLv38。</li><li><a href="https://www.youtube.com/watch?v=0qMT5FyIDOQ" target="_blank" rel="noopener noreferrer">【Lv31〜62編】中盤にテイムせよ！おすすめ恐竜ランキング10選</a> — 自動字幕で10種・動画順位を確認。</li><li><a href="https://www.dododex.com/saddles" target="_blank" rel="noopener noreferrer">Dododex / サドル一覧</a> — 解放レベルと原始的サドルの素材。各生物の餌・拘束可否はカード内リンクを参照。</li><li><a href="https://wikiwiki.jp/arksa/初心者ガイド" target="_blank" rel="noopener noreferrer">ASA日本語Wiki / 初心者ガイド</a> · <a href="https://wikiwiki.jp/arksa/恐竜別役割一覧" target="_blank" rel="noopener noreferrer">恐竜別役割一覧</a> — 序盤の進め方と用途を照合。</li><li><a href="https://www.spike-chunsoft.co.jp/pages/ark/ps5/survival/" target="_blank" rel="noopener noreferrer">スパイク・チュンソフト / ASA序盤攻略ガイド</a> — 初期テイムとパラサウロロフスLv9を確認。</li><li><a href="https://ark.wiki.gg/wiki/Oviraptor" target="_blank" rel="noopener noreferrer">公式コミュニティWiki / オヴィラプトル</a> · <a href="https://ark.wiki.gg/wiki/Eerie_Dung_Beetle" target="_blank" rel="noopener noreferrer">フンコロガシ</a> · <a href="https://ark.wiki.gg/wiki/Sweet_Veggie_Cake" target="_blank" rel="noopener noreferrer">スイートベジタブルケーキ</a> — ASAの自動回収とマイマイの維持食を照合。</li></ul><p class="muted">動画のおすすめ16種をすべて収録。「攻略の進めやすさ順」と優先度は、ソロPvEでの資源確保を重視した本ツールの編集判断です。動画の順位とは別に表示しています。動画中の「全洞窟に入れる」「格上を確実に倒せる」といった表現は、そのまま断定せず用途と制約に整理しました。移動バグを前提とする手順も採用していません。</p><p class="muted">内容は2026年10月1日に閲覧した資料に基づく要約です。通常生物・標準エングラムを対象とし、MOD・旧Mobile・特殊個体の仕様は対象外。リンク先資料と動画へのアクセス以外は、ネット接続なしで使えます。</p></section>
+<section class="reference" id="references"><h2>参考資料と編集方針</h2><ul><li><a href="https://www.youtube.com/watch?v=ey47ewXfSOg" target="_blank" rel="noopener noreferrer">【Lv1〜30編】序盤にテイムせよ！初心者おすすめ恐竜6選</a> — 自動字幕で紹介生物と用途を確認。プテラノドンのサドルはLv38。</li><li><a href="https://www.youtube.com/watch?v=0qMT5FyIDOQ" target="_blank" rel="noopener noreferrer">【Lv31〜62編】中盤にテイムせよ！おすすめ恐竜ランキング10選</a> — 自動字幕で10種・動画順位を確認。</li><li><a href="https://www.youtube.com/watch?v=WHR-xw8Dth4" target="_blank" rel="noopener noreferrer">【Lv63〜編】用途別！終盤に必ずテイムすべきおすすめ恐竜12選</a> — 字幕で採取・ボス戦・子育ての紹介を確認。タイトルは12選ですが、実際の紹介は重複を整理すると13種。既存のオヴィラプトルを含むため、新規追加は12種です。</li><li><a href="https://www.dododex.com/saddles" target="_blank" rel="noopener noreferrer">Dododex / サドル一覧</a> — 解放レベルと原始的サドルの素材。各生物の餌・拘束可否はカード内リンクを参照。</li><li><a href="https://wikiwiki.jp/arksa/初心者ガイド" target="_blank" rel="noopener noreferrer">ASA日本語Wiki / 初心者ガイド</a> · <a href="https://wikiwiki.jp/arksa/恐竜別役割一覧" target="_blank" rel="noopener noreferrer">恐竜別役割一覧</a> — 序盤の進め方と用途を照合。</li><li><a href="https://www.spike-chunsoft.co.jp/pages/ark/ps5/survival/" target="_blank" rel="noopener noreferrer">スパイク・チュンソフト / ASA序盤攻略ガイド</a> — 初期テイムとパラサウロロフスLv9を確認。</li><li><a href="https://ark.wiki.gg/wiki/Oviraptor" target="_blank" rel="noopener noreferrer">公式コミュニティWiki / オヴィラプトル</a> · <a href="https://ark.wiki.gg/wiki/Eerie_Dung_Beetle" target="_blank" rel="noopener noreferrer">フンコロガシ</a> · <a href="https://ark.wiki.gg/wiki/Sweet_Veggie_Cake" target="_blank" rel="noopener noreferrer">スイートベジタブルケーキ</a> — ASAの自動回収とマイマイの維持食を照合。</li></ul><p class="muted">3本の動画に登場する計28種を収録。終盤動画はサドルLv63未満の生物も用途別に紹介しているため、動画区分とサドルレベルは一致しません。テリジノの採取・ボス戦紹介は1枚に統合し、オヴィラプトルは中盤・終盤の両方から絞り込めます。「攻略の進めやすさ順」と優先度は、ソロPvEでの資源確保を重視した本ツールの編集判断です。動画の順位とは別に表示しています。動画中の「全洞窟に入れる」「格上を確実に倒せる」といった表現は、そのまま断定せず用途と制約に整理しました。移動バグを前提とする手順も採用していません。</p><p class="muted">終盤動画のユウティラヌスは投稿者の訂正に従い、恐怖咆哮を逃走効果として記載。オヴィラプトルの産卵支援は交配クールダウン短縮とは区別し、ダエオドンは編成次第の回復候補として整理しました。追加生物の仕様はカード内のASA Wiki・Dododexで照合しています。</p><p class="muted">内容は2026年10月1日に閲覧した資料に基づく要約です。通常生物・標準エングラムを対象とし、MOD・旧Mobile・特殊個体の仕様は対象外。リンク先資料と動画へのアクセス以外は、ネット接続なしで使えます。</p></section>
 </main></div><footer class="footer">ARK FIELD GUIDE · 非公式攻略ツール · ゲーム内設定と最新パッチで挙動が変わる場合があります</footer>
 <script>
 'use strict';
@@ -41,6 +41,371 @@ const creatures = [
 {id:'thylacoleo',name:'ティラコレオ',en:'Thylacoleo',wiki:'Thylacoleo',stage:'mid',rank:2,time:674,level:51,priority:'地上戦闘の強化',roles:['戦闘','移動','洞窟'],use:'出血攻撃と壁登りで地上の強敵・険しい地形に対応。入口が合う洞窟の攻略にも使う。',method:'昏睡',food:'ラムチョップ・こんがり霜降り肉。用意できればキブル（特級）。生肉より焼いた肉を好む。',steps:['レッドウッドの大木からの飛びつきに警戒し、石の罠を準備する。','地上へ誘導して罠に入れる。掴みが許可された環境ならアルゲで運ぶ方法も使える。','麻酔で気絶させて餌を入れ、気絶値が速く下がるためこまめに維持する。'],caution:'木に張り付いた野生個体は騎乗解除する。通常のボスアリーナには入れない。出血が効かない相手もいるため、ボス用の主力とは分けて考える。',place:'レッドウッド',gear:'石の罠 / 麻酔武器 / 焼いた肉または特級キブル / 麻酔薬',saddle:'皮290・繊維155・鉄のインゴット20｜作業台',route:12},
 {id:'argentavis',name:'アルゲンタヴィス',en:'Argentavis',wiki:'Argentavis',stage:'mid',rank:1,time:803,level:62,priority:'中盤の最重要目標',roles:['運搬','移動','戦闘'],use:'採取生物ごと空輸し、金属・石・水晶などの重量を軽減。アンキロ・ドエディ・ビーバーの採取能力をつなぐ。',method:'昏睡',food:'羊肉・霜降り肉・生肉。用意できればキブル（優）。',steps:['山麓の安全な場所に、両端を閉じられる石の恐竜門の通路を作る。','中へ誘導し、出口を通り抜けて門を閉める。脱出できない門の間隔にする。','罠の外から麻酔で気絶させ、肉を入れて保護する。'],caution:'Lv62まで標準サドルを自作できない。生物を掴める対象・野生掴みの可否は設定次第。プテラより遅いので、速度より重量・スタミナを活かす。',place:'山岳地帯・雪原周辺',gear:'石の恐竜門と扉 / 麻酔武器 / 肉 / 移動用ペット',saddle:'皮350・繊維185・キチンまたはケラチン150｜自分のインベントリ',route:16}
 ];
+creatures.push(...[
+  {
+    "id": "rhyniognatha",
+    "name": "リニオグナタ",
+    "en": "Rhyniognatha",
+    "wiki": "Rhyniognatha",
+    "stage": "late",
+    "order": 1,
+    "time": 23,
+    "level": 90,
+    "route": 26,
+    "roles": [
+      "移動",
+      "運搬"
+    ],
+    "use": "大型の生物や荷物を空輸する終盤の輸送役。水中移動にも対応し、採取拠点間の移動を強化する。",
+    "method": "特殊",
+    "food": "オスから得るリニオグナタのフェロモンと、宿主が妊娠中に要求する餌・素材。",
+    "steps": [
+      "オスを倒してフェロモンを入手し、妊娠可能な大型のテイム済み宿主を用意する。",
+      "野生メスの体力を10%未満まで下げ、宿主にフェロモンを使って妊娠攻撃を受けさせる。",
+      "妊娠中の要求を宿主のメニューで確認して満たす。出産した幼体を所有し、餌を与えて育てる。"
+    ],
+    "caution": "宿主は出産時に死亡する。低品質の宿主・要求未達は幼体の品質に影響。妊娠中に宿主をクライオポッドへ入れると中断する。リニオグナタ同士の繁殖は不可。",
+    "place": "沼地上空",
+    "gear": "大型宿主 / フェロモン / 要求素材 / 回復・育成の準備",
+    "saddle": "皮150・繊維200・鉄のインゴット150・水晶30・ポリマー60｜作業台",
+    "priority": "大型空輸を目指すなら",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Rhyniognatha"
+  },
+  {
+    "id": "dunkleosteus",
+    "name": "ダンクルオステウス",
+    "en": "Dunkleosteus",
+    "wiki": "Dunkleosteus",
+    "stage": "late",
+    "order": 2,
+    "time": 132,
+    "level": 44,
+    "route": 21,
+    "roles": [
+      "採取",
+      "海中"
+    ],
+    "use": "海底の金属・石・原油を採取する専門家。海の採掘拠点を整えると陸上採取とは別の資源ルートを作れる。",
+    "method": "昏睡",
+    "food": "キブル（優）、羊肉・霜降り肉など。",
+    "steps": [
+      "海底の危険生物を排除し、潜水装備と帰還用の水中生物を準備する。",
+      "距離を保ち、クロスボウの麻酔矢など水中対応の武器で気絶させる。",
+      "肉系の餌を入れ、周囲から保護しながら気絶値を維持する。"
+    ],
+    "caution": "足が遅く、採った素材を陸へ運ぶ計画が必要。真珠や火打石の採取役にはならない。サドルLv44でも深海での安全確保は別に必要。",
+    "place": "深海",
+    "gear": "潜水装備 / 水中対応の麻酔武器 / 護衛",
+    "saddle": "皮300・繊維180・鉄のインゴット80・セメント120｜自分のインベントリ",
+    "priority": "海底の資源を使うなら",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Dunkleosteus"
+  },
+  {
+    "id": "angler",
+    "name": "アンコウ",
+    "en": "Angler",
+    "wiki": "Angler",
+    "stage": "late",
+    "order": 3,
+    "time": 191,
+    "level": 0,
+    "route": 20,
+    "roles": [
+      "採取",
+      "海中"
+    ],
+    "use": "海底の真珠を効率よく採取。電子基板・電気設備用のシリカ真珠をまとめて確保する。",
+    "method": "昏睡",
+    "food": "キブル（通常）、羊肉・霜降り肉など。",
+    "steps": [
+      "深海で個体を探し、周囲の敵を排除する。酸素と帰還手段を確保する。",
+      "水中用の麻酔武器で体力を確認しながら気絶させる。高レベル個体には麻酔銛も検討する。",
+      "餌を入れ、下がりやすい気絶値を維持する。完成後はサドルなしで騎乗できる。"
+    ],
+    "caution": "クロスボウでは気絶前に倒してしまう場合がある。サドル不要でも深海への到達装備と護衛は必要。採取対象はシリカ真珠で、黒真珠を同様に採れるわけではない。",
+    "place": "深海",
+    "gear": "潜水装備 / 麻酔矢または麻酔銛 / 麻酔薬 / 護衛",
+    "saddle": "不要",
+    "priority": "電子基板の量産に",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Angler",
+    "ride": "サドルなしで騎乗"
+  },
+  {
+    "id": "pelagornis",
+    "name": "ペラゴルニス",
+    "en": "Pelagornis",
+    "wiki": "Pelagornis",
+    "stage": "late",
+    "order": 4,
+    "time": 216,
+    "level": 43,
+    "route": 17,
+    "roles": [
+      "採取",
+      "移動"
+    ],
+    "use": "カイルクペンギンなどから有機ポリマーを採取する飛行生物。水面に着水でき、水辺を移動しやすい。",
+    "method": "昏睡",
+    "food": "魚肉・大トロ、またはキブル（通常）。通常の生肉は使えない。",
+    "steps": [
+      "水面から離れた安全な個体を探し、ボーラで拘束する。",
+      "麻酔矢などで慎重に気絶させる。水中への墜落を避ける。",
+      "魚系の餌を入れ、周囲を守ってテイムする。"
+    ],
+    "caution": "戦闘・重量は控えめ。雪原の有機ポリマー採取には防寒と安全な着陸場所を用意する。有機ポリマーは腐敗するため使う分を運ぶ。",
+    "place": "海岸・海上",
+    "gear": "ボーラ / 麻酔矢 / 魚系の餌 / 防寒装備",
+    "saddle": "皮230・繊維125・キチンまたはケラチン75｜自分のインベントリ",
+    "priority": "有機ポリマー集めに",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Pelagornis"
+  },
+  {
+    "id": "therizinosaurus",
+    "name": "テリジノサウルス",
+    "en": "Therizinosaurus",
+    "wiki": "Therizinosaurus",
+    "stage": "late",
+    "order": 5,
+    "time": 243,
+    "level": 69,
+    "route": 18,
+    "roles": [
+      "採取",
+      "戦闘",
+      "ボス戦"
+    ],
+    "use": "木材・繊維・皮などを採り分ける万能採取役。高品質サドルと繁殖個体を揃え、ドラゴン戦の主力候補にも。",
+    "method": "昏睡",
+    "food": "キブル（超級）が効率的。野菜・メジョベリーでも可能だが長時間になる。",
+    "steps": [
+      "頑丈な罠を作り、接近戦を避けて誘導する。",
+      "罠の外から麻酔弾などで気絶させる。",
+      "餌を入れ、速く下がる気絶値を多めの麻酔薬で維持する。"
+    ],
+    "caution": "草食でも攻撃力が高い。採取の専門レベルは用途に合わせて振る。ボス用は繁殖・刷り込み・サドル品質を整え、スイートベジタブルケーキの回復も準備する。",
+    "place": "森林・草原",
+    "gear": "頑丈な罠 / 麻酔武器 / 多めの麻酔薬 / 草食用の餌",
+    "saddle": "皮285・繊維160・木材120・鉄のインゴット55｜作業台",
+    "priority": "採取とドラゴン戦の両方に",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Therizinosaurus",
+    "extraTimes": [
+      520
+    ]
+  },
+  {
+    "id": "giganotosaurus",
+    "name": "ギガノトサウルス",
+    "en": "Giganotosaurus",
+    "wiki": "Giganotosaurus",
+    "stage": "late",
+    "order": 6,
+    "time": 341,
+    "level": 96,
+    "route": 27,
+    "roles": [
+      "戦闘",
+      "採取"
+    ],
+    "use": "地上の大型敵への対処と肉・皮の大量採取。通常のボス編成とは別に、フィールド戦闘の主力として育成する。",
+    "method": "昏睡",
+    "food": "キブル（超級）、羊肉・霜降り肉など。",
+    "steps": [
+      "金属の恐竜門などで強固な罠を用意し、安全な退避路を確保する。",
+      "大量の麻酔弾を用意し、罠の外から継続して撃つ。",
+      "気絶したらすぐ餌と大量の麻酔薬を入れ、非常に速い気絶値低下を管理する。"
+    ],
+    "caution": "石の建築を破壊する。大ダメージで暴走し、味方も攻撃する場合がある。The Islandの通常ボスアリーナには入れない。テイム直後の能力は野生時と大きく異なる。",
+    "place": "山岳地帯",
+    "gear": "金属の罠 / 大量の麻酔弾・麻酔薬 / 逃走用生物",
+    "saddle": "皮680・繊維350・鉄のインゴット120｜作業台",
+    "priority": "地上の大型戦闘を強化",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Giganotosaurus"
+  },
+  {
+    "id": "carcharodontosaurus",
+    "name": "カルカロドントサウルス",
+    "en": "Carcharodontosaurus",
+    "wiki": "Carcharodontosaurus",
+    "stage": "late",
+    "order": 7,
+    "time": 341,
+    "level": 96,
+    "route": 28,
+    "roles": [
+      "戦闘",
+      "採取"
+    ],
+    "use": "敵を倒して戦闘能力を高める大型肉食。地上の連戦と肉・皮集めで強く、野外戦闘用の最終目標になる。",
+    "method": "特殊",
+    "food": "引きずって渡せる生物の死体。信頼を得た後は騎乗して敵を倒す。",
+    "steps": [
+      "周囲を安全にし、運べる大きめの死体を用意する。",
+      "死体を引きずって近づき、食べさせて信頼ゲージを上げる。",
+      "騎乗できるようになったら敵を倒してテイムゲージを上げる。必要なら死体を渡す段階から繰り返す。"
+    ],
+    "caution": "麻酔で気絶させるテイムではない。途中の騎乗は時間制限があるため敵のいる経路を準備。The Islandの通常ボスアリーナには入れない。",
+    "place": "山岳地帯",
+    "gear": "運べる死体 / 安全な給餌場所 / 戦闘経路",
+    "saddle": "皮400・繊維350・鉄のインゴット180・キチンまたはケラチン20｜作業台",
+    "priority": "連戦に強い大型肉食",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Carcharodontosaurus"
+  },
+  {
+    "id": "rex",
+    "name": "ティラノサウルス",
+    "en": "Rex",
+    "wiki": "Rex",
+    "stage": "late",
+    "order": 8,
+    "time": 494,
+    "level": 74,
+    "route": 23,
+    "roles": [
+      "戦闘",
+      "ボス戦"
+    ],
+    "use": "メガピテクスなどのボス戦に向けた汎用主力。高い体力と攻撃力の個体を繁殖し、部隊を作る。",
+    "method": "昏睡",
+    "food": "キブル（特級）、羊肉・霜降り肉など。",
+    "steps": [
+      "頑丈な囲いとスロープなどで罠を作り、周囲を掃除する。",
+      "罠に誘導し、外から麻酔弾・麻酔矢で気絶させる。",
+      "肉系の餌を入れて保護。ボス用は能力の良い親個体を選んで繁殖する。"
+    ],
+    "caution": "野生を1体捕まえるだけで高難度ボスに勝てるわけではない。繁殖・刷り込み・レベル上げ・サドル防御と、ボスごとの戦術が必要。",
+    "place": "山岳・草原など",
+    "gear": "大型用の罠 / 麻酔武器 / 肉系の餌",
+    "saddle": "皮380・繊維200・鉄のインゴット50｜作業台",
+    "priority": "ボス用の汎用主力",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Rex"
+  },
+  {
+    "id": "megatherium",
+    "name": "メガテリウム",
+    "en": "Megatherium",
+    "wiki": "Megatherium",
+    "stage": "late",
+    "order": 9,
+    "time": 571,
+    "level": 52,
+    "route": 19,
+    "roles": [
+      "採取",
+      "洞窟",
+      "ボス戦"
+    ],
+    "use": "昆虫を倒すと強化されるため、ブルードマザー戦の主力候補。キチン採取や、持ち込める洞窟でも活躍する。",
+    "method": "昏睡",
+    "food": "キブル（優）、羊肉・霜降り肉など。",
+    "steps": [
+      "昆虫を倒して強化中の個体を避け、頑丈な罠に誘導する。",
+      "罠から麻酔武器で気絶させる。",
+      "餌を入れて保護し、ボス向けは高能力の個体から繁殖する。"
+    ],
+    "caution": "昆虫撃破による強化が強み。ボス戦では雑魚を倒して強化を維持する。大型なので洞窟への持ち込み・入口を確認。繁殖とサドル品質の準備も必要。",
+    "place": "レッドウッド・雪原周辺",
+    "gear": "頑丈な罠 / 麻酔武器 / 肉系の餌",
+    "saddle": "皮325・繊維130・セメント100・鉄のインゴット55｜作業台",
+    "priority": "ブルードマザー対策に",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Megatherium"
+  },
+  {
+    "id": "yutyrannus",
+    "name": "ユウティラヌス",
+    "en": "Yutyrannus",
+    "wiki": "Yutyrannus",
+    "stage": "late",
+    "order": 10,
+    "time": 628,
+    "level": 80,
+    "route": 24,
+    "roles": [
+      "戦闘",
+      "ボス戦"
+    ],
+    "use": "勇気の咆哮で味方部隊の攻撃・防御を支援。ボス戦では騎乗して咆哮を維持する支援役として有力。",
+    "method": "昏睡",
+    "food": "キブル（特級）、羊肉・霜降り肉など。",
+    "steps": [
+      "防寒を整え、同行するカルノタウルスなどを排除する。",
+      "恐怖咆哮を警戒し、頑丈な罠へ誘導する。",
+      "麻酔で気絶させ、肉系の餌を入れて保護する。"
+    ],
+    "caution": "恐怖の咆哮は対象を逃走させる効果。動画の「騎乗解除」という説明は投稿者が訂正している。ボス支援には勇気の咆哮を使い、スタミナと部隊の位置を管理する。",
+    "place": "雪原",
+    "gear": "防寒装備 / 頑丈な罠 / 麻酔武器 / 護衛",
+    "saddle": "皮425・繊維350・鉄のインゴット135・真珠125｜作業台",
+    "priority": "ボス部隊の支援役",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Yutyrannus"
+  },
+  {
+    "id": "daeodon",
+    "name": "ダエオドン",
+    "en": "Daeodon",
+    "wiki": "Daeodon",
+    "stage": "late",
+    "order": 11,
+    "time": 676,
+    "level": 59,
+    "route": 22,
+    "roles": [
+      "回復",
+      "ボス戦"
+    ],
+    "use": "食料値を消費して周囲の味方を回復。ボス戦前後の部隊回復や、編成に余裕があるときの支援に使う。",
+    "method": "昏睡",
+    "food": "キブル（優）、羊肉・霜降り肉など。維持・回復用の食料も大量に用意する。",
+    "steps": [
+      "群れを分離し、頑丈な罠に誘導する。",
+      "麻酔武器で気絶させる。",
+      "肉系の餌を入れてテイムし、完成後も回復用の食料を補充する。"
+    ],
+    "caution": "回復は食料を大量消費し、食料値が尽きると止まる。焼肉などの補給を準備する。すべてのボス編成に必須ではなく、攻撃役との枠の配分を考える。",
+    "place": "雪原",
+    "gear": "罠 / 麻酔武器 / 防寒装備 / 大量の食料",
+    "saddle": "皮290・繊維155・鉄のインゴット20｜作業台",
+    "priority": "部隊の回復を補助",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Daeodon"
+  },
+  {
+    "id": "gigantoraptor",
+    "name": "ギガントラプトル",
+    "en": "Gigantoraptor",
+    "wiki": "Gigantoraptor",
+    "stage": "late",
+    "order": 13,
+    "time": 767,
+    "level": 69,
+    "route": 25,
+    "roles": [
+      "卵・繁殖",
+      "移動"
+    ],
+    "use": "子育て・孵化と刷り込みの補助、繁殖時の能力継承を支える羽根の確保に。ボス用部隊の育成基盤を強化する。",
+    "method": "特殊",
+    "food": "幼体の動作を真似る。親の注意を逸らすための受精卵を用意する。",
+    "steps": [
+      "親と幼体のいる巣を探す。親を倒したり罠で固定したりしない。",
+      "巣の近くへ受精卵を置いて親の注意を逸らし、巣に隠れる。",
+      "幼体の動作に合わせて画面の操作を行い、ゲージを上げる。テイム後は安全な場所で育成する。"
+    ],
+    "caution": "成体を直接テイムできない。親が自由に移動できないと幼体の動作が止まる。親子から離れすぎず、育成支援は対象・設定と操作条件を確認して使う。",
+    "place": "森林・草原の巣",
+    "gear": "受精卵 / 安全な接近経路 / 幼体の育成食",
+    "saddle": "皮285・繊維160・木材120・鉄のインゴット55｜作業台",
+    "priority": "ボス用の繁殖環境づくりに",
+    "sourceUrl": "https://wikiwiki.jp/arksa/Gigantoraptor"
+  }
+]);
+const stageOrder={early:0,mid:1,late:2};
+const stageNames={early:'序盤',mid:'中盤',late:'終盤'};
+const videoIds={early:'ey47ewXfSOg',mid:'0qMT5FyIDOQ',late:'WHR-xw8Dth4'};
+creatures.forEach(c=>{c.stages=[c.stage];c.videos=[{stage:c.stage,time:c.time,order:c.order,rank:c.rank}];if(c.extraTimes)c.extraTimes.forEach(time=>c.videos.push({stage:c.stage,time,order:c.order,label:'ボス戦の紹介'}));});
+const oviraptor=creatures.find(c=>c.id==='oviraptor');
+oviraptor.stages.push('late');oviraptor.videos.push({stage:'late',time:710,order:12});
+oviraptor.caution+=' 産卵間隔の短縮と、交配後のクールダウンは別の仕組み。交配の待ち時間を短縮する効果とは扱わない。';
+function videoTag(v){return v.label||`${stageNames[v.stage]}動画 · ${v.stage==='mid'?'第'+v.rank+'位':v.order+'番目'}`;}
+function videoPosition(c,stage){return c.videos.find(v=>v.stage===stage)||c.videos[0];}
 const $=id=>document.getElementById(id), KEY='ark-field-guide-v1';
 let saved={level:1,done:[]};let persistent=true;
 try{const raw=JSON.parse(localStorage.getItem(KEY)||'null');if(raw&&typeof raw==='object'){saved.level=Number.isFinite(Number(raw.level))?Math.max(1,Math.min(200,Number(raw.level))):1;saved.done=Array.isArray(raw.done)?raw.done.filter(id=>creatures.some(c=>c.id===id)):[];}}catch(e){persistent=false;}
@@ -49,11 +414,11 @@ function persist(){try{localStorage.setItem(KEY,JSON.stringify({level:Number($('
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link=(url,label)=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`;
 function render(){const level=Number($('level').value)||1;const words=$('search').value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);const stage=$('stage').value,role=$('role').value;
-let list=creatures.filter(c=>{const text=[c.name,c.en,c.use,c.method,c.food,c.place,c.priority,...c.roles,...c.steps,c.caution].join(' ').toLocaleLowerCase();return words.every(w=>text.includes(w))&&(stage==='all'||c.stage===stage)&&(role==='all'||c.roles.includes(role))&&(!$('unlocked').checked||c.level<=level)&&(!$('untamed').checked||!done.has(c.id));});
-const sort=$('sort').value;list.sort((a,b)=>sort==='level'?a.level-b.level||a.route-b.route:sort==='video'?(a.stage===b.stage?(a.stage==='early'?a.order-b.order:a.rank-b.rank):(a.stage==='early'?-1:1)):sort==='name'?a.name.localeCompare(b.name,'ja'):a.route-b.route);
+let list=creatures.filter(c=>{const text=[c.name,c.en,c.use,c.method,c.food,c.place,c.priority,...c.roles,...c.steps,c.caution].join(' ').toLocaleLowerCase();return words.every(w=>text.includes(w))&&(stage==='all'||c.stages.includes(stage))&&(role==='all'||c.roles.includes(role))&&(!$('unlocked').checked||c.level<=level)&&(!$('untamed').checked||!done.has(c.id));});
+const sort=$('sort').value;list.sort((a,b)=>sort==='level'?a.level-b.level||a.route-b.route:sort==='video'?(stageOrder[videoPosition(a,stage).stage]-stageOrder[videoPosition(b,stage).stage]||(videoPosition(a,stage).rank||videoPosition(a,stage).order)-(videoPosition(b,stage).rank||videoPosition(b,stage).order)):sort==='name'?a.name.localeCompare(b.name,'ja'):a.route-b.route);
 $('result-count').textContent=`${list.length} / ${creatures.length} 種を表示`;$('completion').textContent=`テイム済み ${done.size} / ${creatures.length} 種`;$('progress').style.width=(done.size/creatures.length*100)+'%';
-const unlocked=creatures.filter(c=>c.level>0&&c.level<=level).length;$('level-summary').textContent=`サドル解放 ${unlocked} / 11 種 · サドル不要 5種`;
-$('grid').innerHTML=list.length?list.map(c=>{const video=c.stage==='early'?'ey47ewXfSOg':'0qMT5FyIDOQ';const ready=c.level<=level;const videoLabel=c.stage==='early'?`序盤動画 · ${c.order}番目`:`中盤動画 · 第${c.rank}位`;return `<article class="creature ${done.has(c.id)?'done':''}"><div class="cardhead"><div><div class="eyebrow">${esc(c.priority)}</div><h3>${esc(c.name)}</h3><div class="en">${esc(c.en)}</div></div><div class="saddle ${c.level===0?'none':''}">${c.level?'Lv '+c.level:'不要'}<small>${c.level?'サドル解放':esc(c.ride)}</small></div></div><div class="cardbody"><div class="tags">${c.roles.map(r=>`<span class="tag">${esc(r)}</span>`).join('')}<span class="tag">${videoLabel}</span></div><p class="use">${esc(c.use)}</p><div class="brief"><strong>${esc(c.method)}テイム</strong> · ${esc(c.place)}<br><strong>餌：</strong>${esc(c.food)}</div><div class="levelstate ${ready?'ready':''}">${c.level===0?'サドル不要 / 餌・環境の準備を確認':ready?'現在のレベルでサドル解放済み':`サドル解放まであと ${c.level-level} Lv（テイムは先に可能）`}</div></div><details><summary>捕獲手順・準備・出典を開く</summary><div class="detail"><h4>準備するもの</h4><p>${esc(c.gear)}</p><h4>テイム手順</h4><ol>${c.steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol><p class="warn">${esc(c.caution)}</p><h4>サドル素材 / 製作場所</h4><p>${esc(c.saddle)}</p><div class="sources">${link('https://www.youtube.com/watch?v='+video+'&t='+c.time+'s','動画の紹介箇所')}${link('https://www.dododex.com/taming/'+c.id,'Dododex / 餌・必要数')}${c.level?link('https://www.dododex.com/saddles','サドルレベル出典'):''}${['otter','doedicurus','baryonyx','thylacoleo','argentavis','castoroides'].includes(c.id)?link('https://wikiwiki.jp/arksa/'+c.wiki,'ASA Wiki / 性能・テイム'):c.id==='oviraptor'?link('https://ark.wiki.gg/wiki/Oviraptor','ASA / 卵回収'):c.id==='dungbeetle'?link('https://ark.wiki.gg/wiki/Eerie_Dung_Beetle','ASA / フン回収'):c.id==='achatina'?link('https://ark.wiki.gg/wiki/Sweet_Veggie_Cake','ケーキと維持食'):''}</div></div></details><div class="cardfoot"><label class="check"><input type="checkbox" data-done="${c.id}" ${done.has(c.id)?'checked':''}>${esc(c.name)}をテイム済みにする</label></div></article>`;}).join(''):'<div class="empty"><h3>該当する生物がありません</h3><p class="muted">検索語・用途・レベル条件を減らしてみてください。</p><button id="empty-reset">絞り込みを解除</button></div>';
+const unlocked=creatures.filter(c=>c.level>0&&c.level<=level).length;$('level-summary').textContent=`サドル解放 ${unlocked} / ${creatures.filter(c=>c.level>0).length} 種 · サドル不要 ${creatures.filter(c=>c.level===0).length}種`;
+$('grid').innerHTML=list.length?list.map(c=>{const ready=c.level<=level;const videoLabel=c.videos.filter(v=>!v.label).map(videoTag).join(' / ');return `<article class="creature ${done.has(c.id)?'done':''}"><div class="cardhead"><div><div class="eyebrow">${esc(c.priority)}</div><h3>${esc(c.name)}</h3><div class="en">${esc(c.en)}</div></div><div class="saddle ${c.level===0?'none':''}">${c.level?'Lv '+c.level:'不要'}<small>${c.level?'サドル解放':esc(c.ride)}</small></div></div><div class="cardbody"><div class="tags">${c.roles.map(r=>`<span class="tag">${esc(r)}</span>`).join('')}<span class="tag">${videoLabel}</span></div><p class="use">${esc(c.use)}</p><div class="brief"><strong>${esc(c.method)}テイム</strong> · ${esc(c.place)}<br><strong>餌：</strong>${esc(c.food)}</div><div class="levelstate ${ready?'ready':''}">${c.level===0?'サドル不要 / 餌・環境の準備を確認':ready?'現在のレベルでサドル解放済み':`サドル解放まであと ${c.level-level} Lv（テイムは先に可能）`}</div></div><details><summary>捕獲手順・準備・出典を開く</summary><div class="detail"><h4>準備するもの</h4><p>${esc(c.gear)}</p><h4>テイム手順</h4><ol>${c.steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol><p class="warn">${esc(c.caution)}</p><h4>サドル素材 / 製作場所</h4><p>${esc(c.saddle)}</p><div class="sources">${c.videos.map(v=>link('https://www.youtube.com/watch?v='+videoIds[v.stage]+'&t='+v.time+'s',videoTag(v))).join('')}${link('https://www.dododex.com/taming/'+c.id,'Dododex / 餌・必要数')}${c.level?link('https://www.dododex.com/saddles','サドルレベル出典'):''}${c.sourceUrl?link(c.sourceUrl,'ASA Wiki / 性能・テイム'):['otter','doedicurus','baryonyx','thylacoleo','argentavis','castoroides'].includes(c.id)?link('https://wikiwiki.jp/arksa/'+c.wiki,'ASA Wiki / 性能・テイム'):c.id==='oviraptor'?link('https://ark.wiki.gg/wiki/Oviraptor','ASA / 卵回収'):c.id==='dungbeetle'?link('https://ark.wiki.gg/wiki/Eerie_Dung_Beetle','ASA / フン回収'):c.id==='achatina'?link('https://ark.wiki.gg/wiki/Sweet_Veggie_Cake','ケーキと維持食'):''}</div></div></details><div class="cardfoot"><label class="check"><input type="checkbox" data-done="${c.id}" ${done.has(c.id)?'checked':''}>${esc(c.name)}をテイム済みにする</label></div></article>`;}).join(''):'<div class="empty"><h3>該当する生物がありません</h3><p class="muted">検索語・用途・レベル条件を減らしてみてください。</p><button id="empty-reset">絞り込みを解除</button></div>';
 }
 function reset(){ $('search').value='';$('role').value='all';$('stage').value='all';$('sort').value='route';$('unlocked').checked=false;$('untamed').checked=false;render();}
 ['search','role','stage','sort','unlocked','untamed'].forEach(id=>$(id).addEventListener(id==='search'?'input':'change',render));
