@@ -46,6 +46,11 @@
 
 
 
+
+
+
+
+
 <style id="stats-style">
 .toolnav{flex-wrap:wrap}.stats-page{max-width:1440px;margin:auto;padding:28px 36px}.stats-intro{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:24px}.stats-intro h2{font-size:30px;margin:4px 0 8px}.stat-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:640px;margin-bottom:10px}.stat-tabs button{padding:12px 18px;text-align:left}.stat-tabs small{display:block;font-size:12px;color:var(--muted)}.stat-tabs button[aria-pressed=true]{border-color:var(--cyan);background:#193831;color:var(--cyan)}.stat-tabs button[aria-pressed=true] small{color:#a0d0c7}.stat-workspace{display:grid;grid-template-columns:minmax(360px,1fr) minmax(360px,1fr);gap:24px;align-items:start;margin-top:24px}.stat-box{padding:24px;border:1px solid var(--line);background:var(--panel);border-radius:10px;margin-bottom:20px}.stat-box h3{font-size:19px}.stat-section-head{display:flex;align-items:center;gap:12px;margin-bottom:20px}.stat-step{font:700 12px/1 ui-monospace,monospace;color:var(--cyan);background:#203b3b;border:1px solid #385854;padding:8px;border-radius:5px}.stats-page label:not(.check):not(.stat-file-label){display:block;font-size:13px;color:var(--muted);margin:12px 0 0}.stats-page input:not([type=checkbox]):not([type=file]),.stats-page select,.stats-page textarea{width:100%;display:block;margin-top:5px;min-width:0}.stats-page input[type=text]{font:inherit;background:#0c151d;color:var(--text);border:1px solid var(--line);border-radius:6px;padding:10px 12px}.stat-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 14px}.stat-drop{border:1px dashed #58736e;border-radius:8px;background:#0e1a20;display:flex;flex-direction:column;align-items:center;text-align:center;padding:22px 14px;gap:8px}.stat-drop.dragging{border-color:var(--cyan);background:#193831}.stat-drop>strong{font-size:15px}.stat-drop img{max-width:100%;max-height:320px;object-fit:contain;border-radius:6px}.stat-file-label{cursor:pointer;display:inline-flex!important;align-items:center;border:1px solid var(--line);border-radius:6px;padding:9px 12px;font-size:13px!important;color:var(--text)!important;margin:0!important;background:#0c151d}.stat-file-label:hover{border-color:var(--cyan)}.stat-file-label:focus-within{outline:3px solid var(--gold)}.stat-file-label input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}.stat-box details{margin-top:14px}.stat-box summary{padding:12px 0}.stat-note{font-size:12px;margin-top:12px}.stat-filter{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;margin:10px 0}.stat-filter .check{font-size:12px}.stat-value-row{display:grid;grid-template-columns:1fr minmax(100px,170px);gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:9px 0}.stat-value-row label{margin:0!important;font-size:15px!important;color:var(--text)!important}.stat-value-row input{text-align:right;font-variant-numeric:tabular-nums;margin:0!important}.stat-value-row small{display:block;font-size:11px;color:var(--muted)}.stat-primary{background:var(--cyan);border-color:var(--cyan);color:#0c1319;font-weight:700}.stat-primary:hover{background:#a5eade}.stat-primary:disabled{opacity:.5;cursor:wait}#stat-calculate{width:100%;margin-top:22px}.stat-point-row{display:grid;grid-template-columns:1fr 90px 90px;gap:8px;align-items:center;font-size:13px;padding:7px 0}.stat-point-row input{padding:6px 8px!important}.stat-point-row label{margin:0!important;font-size:11px!important}.stat-custom-row{display:grid;grid-template-columns:80px repeat(4,minmax(45px,1fr));gap:5px;align-items:center;font-size:11px;padding:6px 0}.stat-custom-row input{padding:6px 3px!important}.stat-empty{display:flex;flex-direction:column;align-items:center;text-align:center;padding:30px 12px;gap:10px}.stat-empty>span{font:300 44px/1 ui-monospace,monospace;color:var(--cyan)}.stat-empty p{max-width:280px}.stat-solution-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.stat-solution-head select{width:auto}.stat-result-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:15px 0;border-block:1px solid var(--line);padding:18px 0}.stat-result-summary strong{display:block;font:700 27px/1.3 ui-monospace,monospace;color:var(--cyan)}.stat-result-summary small{font-size:11px;color:var(--muted)}.stat-point-result{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:12px 0;font-size:14px}.stat-point-result.header{color:var(--muted);font-size:11px}.stat-point-result strong{font:700 24px/1.2 ui-monospace,monospace;color:var(--cyan)}.stat-point-result .dom{color:var(--gold)}.stat-point-result small{display:block;color:var(--muted);font-size:11px}.stat-meter{display:block;height:3px;background:var(--line);margin-top:8px;max-width:110px}.stat-meter span{display:block;background:var(--cyan);height:3px}.stat-actions{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 12px}.stat-actions button{font-size:13px}.stat-library-filters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}.stat-library-card{background:#101a23;border:1px solid var(--line);border-radius:7px;padding:15px;margin-bottom:10px}.stat-library-card.active{border-color:var(--cyan)}.stat-library-card h4{font-size:16px;margin:0 0 4px;overflow-wrap:anywhere}.stat-library-card .meta{font-size:12px;overflow-wrap:anywhere}.stat-library-card .stat-actions{margin:12px 0 0}.stat-library-card button{padding:5px 10px}.stat-library-points{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;margin-top:8px}.stat-library-points strong{color:var(--cyan)}.stat-sources summary{padding-left:0}.stat-alert{padding:12px 14px;border-left:3px solid var(--gold);background:#27221b;color:#eed4a7;font-size:13px;margin:12px 0}.stat-ok{color:var(--cyan)}#stat-calc-status,#stat-save-status{overflow-wrap:anywhere}#stat-library{max-height:650px;overflow:auto}#stat-ocr-text{font:13px/1.6 ui-monospace,monospace}#stat-alt-note{font-size:12px}@media(max-width:1000px){.stat-workspace{grid-template-columns:minmax(310px,1fr) minmax(310px,1fr);gap:18px}.stat-box{padding:18px}}@media(max-width:720px){.stats-page{padding:20px}.stats-intro{align-items:start;flex-direction:column;gap:10px}.stats-intro h2{font-size:25px}.stat-workspace{display:block}.stat-tabs button{padding:10px}.stat-box{padding:16px}.stat-fields{gap:0 10px}.stat-point-result{gap:7px}.stat-point-result strong{font-size:22px}.stat-custom-row{grid-template-columns:60px repeat(4,minmax(40px,1fr))}.stat-drop>strong{font-size:13px}}@media print{.stat-input-panel,.stat-tabs,#stat-example,.stat-actions,.stat-library-filters,#stat-library-search,#stat-save-status,.stat-ocr-details,.stat-sources{display:none!important}.stats-page{padding:0}.stat-workspace{display:block}.stat-box,.stat-library-card{background:white;color:black;break-inside:avoid}.stat-point-result strong,.stat-result-summary strong,.stat-point-result .dom,.stat-library-points strong{color:black}#stat-library{max-height:none;overflow:visible}}
 .stat-detail-link{display:inline-flex;align-items:center;text-decoration:none;font-size:12px;padding:5px 8px;border:1px solid var(--cyan);border-radius:6px;color:var(--cyan);background:#18302c;margin-left:auto}.stat-detail-link:hover{background:#24473f}.stat-detail-toolbar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:24px}.stat-library-card{padding:10px 12px;margin-bottom:8px}.stat-library-card h4{font-size:14px;margin:0 0 2px}.stat-library-card .meta{font-size:11px}.stat-library-card .stat-actions{margin:6px 0 0;gap:6px}.stat-library-card button{padding:3px 8px;font-size:11px}.stat-library-points{gap:4px 10px;font-size:11px;margin:6px 0;line-height:1.6}.stat-library-points span{white-space:nowrap}.stat-library-points strong{font:700 12px/1.4 ui-monospace,monospace}.stat-library-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 16px;padding-top:12px}.stat-library-controls label{margin-top:0!important}.stat-library-controls button{align-self:end}.stat-library-controls>p{grid-column:1/-1;margin:0}.stat-library-table-scroll{max-width:100%;overflow:auto;border:1px solid var(--line);border-radius:8px;max-height:75vh;overscroll-behavior-x:contain;margin:14px 0}.stat-library-table{width:100%;border-collapse:separate;border-spacing:0;font-size:13px;text-align:left;min-width:1320px;font-variant-numeric:tabular-nums}.stat-library-table th,.stat-library-table td{padding:14px 12px;border-bottom:1px solid var(--line);vertical-align:top;background:var(--panel)}.stat-library-table thead th{position:sticky;top:0;background:#182831;z-index:2;white-space:nowrap;padding:9px}.stat-library-table thead th:first-child{left:0;z-index:4}.stat-library-table tbody th{position:sticky;left:0;z-index:1;min-width:200px;max-width:230px;border-right:1px solid var(--line);font-weight:400;overflow-wrap:anywhere}.stat-library-table tbody th>strong{font-size:15px;display:block;color:var(--text)}.stat-library-table tbody th>span{display:block;color:var(--muted);font-size:11px;line-height:1.6;margin-top:3px}.stat-library-table td>strong{display:block;color:var(--cyan);font:700 22px/1.3 ui-monospace,monospace;white-space:nowrap}.stat-library-table td>small{display:block;white-space:nowrap;color:var(--muted);font-size:10px;margin-top:6px}.stat-library-table .stat-list-number{font:600 17px/1.6 ui-monospace,monospace;white-space:nowrap}.stat-library-table th button{font-size:12px;padding:6px 8px;white-space:nowrap;border-color:transparent;background:transparent}.stat-library-table th[aria-sort=descending] button,.stat-library-table th[aria-sort=ascending] button{color:var(--cyan);border-color:var(--cyan)}.stat-library-table td button{font-size:12px;padding:5px 8px}.stat-library-table .stat-list-notes{white-space:pre-wrap;max-height:70px;overflow:auto;color:var(--text);margin-top:8px}.stat-library-table tbody tr:hover td,.stat-library-table tbody tr:hover th{background:#172630}#stat-library-page-title:focus{outline:none}@media(max-width:1000px){.stat-library-controls{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:720px){.stat-library-controls{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.stat-detail-toolbar button{font-size:12px}.stat-library-table{font-size:12px}.stat-library-table tbody th{min-width:145px;max-width:145px;width:145px}.stat-library-table th,.stat-library-table td{padding:12px 9px}.stat-library-table td>strong{font-size:20px}.stat-section-head{flex-wrap:wrap;gap:8px}.stat-detail-link{font-size:11px}.stat-library-table-scroll{max-height:70vh}}@media print{.stat-library-controls,.stat-detail-toolbar,.stat-detail-link{display:none!important}.stat-library-table-scroll{max-height:none;overflow:visible;border:0}.stat-library-table{min-width:0;font-size:8px}.stat-library-table th,.stat-library-table td{padding:5px;position:static!important;background:white;color:black}.stat-library-table td>strong{font-size:12px;color:black}.stat-library-table td>small{font-size:8px;color:black}}
@@ -55,13 +60,16 @@
 #stat-calculate-result{font-size:12px;padding:7px 10px;margin-left:auto}.stat-result-box .stat-section-head{flex-wrap:wrap}.stat-result-box #stat-calc-status-result:empty{display:none}.stat-preview-open{border:0;background:transparent;padding:0;max-width:100%;cursor:zoom-in}.stat-preview-open[hidden]{display:none}.stat-preview-open img{display:block;margin:auto}.stat-preview-open span{display:block;font-size:12px;color:var(--cyan);margin-top:4px}.stat-preview-open:hover{background:#19302d}.stat-image-open{overflow:hidden}#stat-image-dialog{width:min(1200px,94vw);height:90vh;max-width:94vw;max-height:94vh;padding:16px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text)}#stat-image-dialog[open]{display:flex;flex-direction:column;gap:12px}#stat-image-dialog::backdrop{background:#03080de6}.stat-image-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.stat-image-toolbar button{font-size:13px;padding:7px 10px}.stat-image-toolbar label{display:flex!important;align-items:center;gap:8px;margin:0!important;font-size:12px;flex-wrap:wrap}.stat-image-toolbar input{width:130px!important;margin:0!important}#stat-image-viewport{overflow:auto;flex:1;min-height:0;background:#081017;border-radius:6px;padding:8px}#stat-image-full{display:block;margin:0 auto;height:auto;max-width:none}#stat-image-dialog[data-fit=true] #stat-image-full{width:auto;max-width:100%;max-height:calc(90vh - 110px)}
 .stats-library-open .top{padding-top:12px;padding-bottom:8px}.stats-library-open header h1{font-size:24px;margin:3px 0}.stats-library-open header .top p{display:none}.stats-library-open header .top .meta{font-size:11px}.stats-library-open .toolnav{padding-top:8px;padding-bottom:8px}.stats-library-open .toolnav button{padding:6px 12px;font-size:13px}.stats-library-open .stats-page{padding-top:16px}#stat-library-page .stat-detail-toolbar{margin-bottom:12px}#stat-library-page .stat-detail-toolbar button{font-size:12px;padding:6px 10px}#stat-library-page .stats-intro{margin-bottom:12px;gap:10px}#stat-library-page .stats-intro h2{font-size:24px;margin:3px 0}#stat-library-page .stats-intro .brand{font-size:11px}#stat-library-page .stats-intro p{font-size:12px;margin:0}#stat-library-page .stat-library-controls{padding:12px;gap:8px 12px;margin-bottom:8px}#stat-library-page .stat-library-controls label{font-size:11px}#stat-library-page .stat-library-controls input,#stat-library-page .stat-library-controls select,#stat-library-page .stat-library-controls button{font-size:12px;padding:6px 8px;margin-top:3px}#stat-library-page .stat-library-controls>p{font-size:10px}.stat-table-settings{margin:10px 0}.stat-table-settings>summary{padding:6px 0;font-size:12px}.stat-table-settings-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 18px;padding:4px 0 12px}.stat-table-settings-grid label{font-size:12px!important;margin:0!important}.stat-table-settings-grid select{padding:5px 8px;font-size:12px}.stat-table-settings input[type=range]{padding:0}.stat-table-settings output{color:var(--cyan);margin-left:6px}.stat-table-columns{padding:8px 12px;border:1px solid var(--line);border-radius:6px;margin:0 0 8px}.stat-table-columns legend{font-size:11px;color:var(--muted)}#stat-table-columns{display:flex;gap:6px 14px;flex-wrap:wrap}#stat-table-columns label{font-size:12px;margin:0!important}.stat-table-settings button{padding:5px 8px;font-size:12px}#stat-table-settings-status{font-size:10px;margin-left:10px}#stat-list-caption{font-size:11px;margin:8px 0}.stat-library-table-scroll{margin:8px 0}.stat-library-table{--table-scale:.9;--table-cell-y:4px;font-size:calc(13px * var(--table-scale));line-height:1.35}.stat-library-table th,.stat-library-table td{padding:var(--table-cell-y) calc(10px * var(--table-scale))}.stat-library-table thead th{padding:4px}.stat-library-table th button{font-size:calc(12px * var(--table-scale));padding:4px 6px}.stat-library-table td button{font-size:calc(12px * var(--table-scale));padding:3px 6px}.stat-library-table tbody th{min-width:calc(190px * var(--table-scale));max-width:calc(220px * var(--table-scale))}.stat-library-table tbody th>strong{font-size:calc(15px * var(--table-scale));line-height:1.35}.stat-library-table tbody th>span{font-size:calc(11px * var(--table-scale));line-height:1.3;margin-top:2px}.stat-library-table td>strong{font-size:calc(20px * var(--table-scale));line-height:1.2}.stat-library-table td>small{font-size:calc(10px * var(--table-scale));line-height:1.2;margin-top:2px}.stat-library-table .stat-list-number{font-size:calc(16px * var(--table-scale));line-height:1.3}.stat-library-table .stat-list-notes{margin-top:3px;max-height:45px}.stat-library-table[data-extra=false] td>small,.stat-library-table[data-meta=false] .stat-list-meta,.stat-library-table[data-notes=false] .stat-list-notes{display:none}.stat-library-table[data-sticky=false] tbody th{position:static}.stat-library-table[data-sticky=false] thead th:first-child{left:auto}@media(max-width:720px){.stats-library-open .top{padding:12px 20px;gap:8px}.stats-library-open header h1{font-size:20px}.stats-library-open .toolnav{gap:6px}.stat-table-settings-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#stat-table-settings-status{display:block;margin:6px 0 0}.stat-library-table tbody th{min-width:calc(145px * var(--table-scale));max-width:calc(160px * var(--table-scale));width:auto}.stat-image-toolbar{gap:8px}.stat-image-toolbar label{order:3;width:100%}#stat-image-dialog{padding:10px}#stat-image-dialog[data-fit=true] #stat-image-full{max-height:calc(90vh - 140px)}}@media print{#stat-calculate-result,.stat-table-settings,#stat-image-dialog{display:none!important}}
 .stat-dino-import{display:grid;gap:8px;padding:14px;margin-bottom:14px;border:1px solid var(--line,#29434b);border-radius:12px;background:rgba(30,108,115,.08)}.stat-dino-import label{min-width:0}.stat-dino-import input[type=file]{max-width:100%;min-width:0;width:100%;font-size:13px}.stat-dino-import button{justify-self:start;max-width:100%}.stat-dino-import p{margin:0;overflow-wrap:anywhere}
-#stat-folder-single-label[hidden],#stat-folder-save[hidden],#stat-folder-fallback[hidden]{display:none!important}
+#stat-folder-save[hidden],#stat-folder-fallback[hidden]{display:none!important}
 .stat-folder-guide{border-top:1px solid var(--line);padding-top:8px;font-size:12px;line-height:1.8}.stat-folder-guide>summary{color:var(--cyan);padding:4px 0;cursor:pointer}.stat-folder-guide ol{padding-left:22px;margin:10px 0}.stat-folder-guide li{padding-left:3px;margin-bottom:12px;overflow-wrap:anywhere}.stat-folder-guide p{margin-top:10px!important}.stat-folder-route{padding:9px 12px;margin:8px 0;border:1px solid var(--line);border-radius:6px;background:#0c151d;color:var(--cyan);overflow-wrap:anywhere}.stat-folder-guide strong{color:var(--text)}
 .stat-import-source.is-unset{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.7}.stat-kind-badge{display:inline-block;font-size:11px;color:var(--cyan);border:1px solid var(--line);padding:3px 8px;border-radius:5px;margin:8px 0 0}.stat-kind-badge[hidden],#stat-settings-folder-picker[hidden]{display:none!important}
-#stat-import-single[hidden],#stat-import-batch[hidden],#stat-read-dino-file[hidden]{display:none!important}.stat-top-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}.stat-top-actions button{font-size:12px;padding:9px 12px}.stat-import-shell{border:1px solid var(--line);border-radius:10px;margin-bottom:18px;overflow:hidden;background:#101d25}.stat-import-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 16px 5px}.stat-import-heading>strong{font-size:15px}.stat-text-button{border:0;background:transparent;color:var(--cyan);font-size:12px;padding:4px 0}.stat-text-button:hover{background:transparent;text-decoration:underline}.stat-import-source{padding:0 16px 12px;margin:0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11px;color:var(--muted)}.stat-import-tabs{display:flex;gap:4px;padding:0 12px;border-bottom:1px solid var(--line)}.stat-import-tabs button{flex:1;border:0;border-bottom:2px solid transparent;border-radius:0;padding:11px 8px;background:transparent;font-size:13px;color:var(--muted)}.stat-import-tabs button[aria-selected=true]{color:var(--cyan);border-bottom-color:var(--cyan);background:#19302c}.stat-import-shell [role=tabpanel]{padding:16px}.stat-import-description{font-size:12px;color:var(--muted);margin:0 0 12px;line-height:1.6}.stat-import-buttons{display:flex;flex-wrap:wrap;align-items:center;gap:8px}.stat-import-buttons>button,.stat-import-buttons>.stat-file-label{font-size:12px!important;padding:9px 11px!important}.stat-import-shell p[role=status]{margin:10px 0 0;font-size:12px;line-height:1.7;overflow-wrap:anywhere}.stat-import-shell p[role=status]:empty{display:none}.stat-import-help,.stat-import-other{margin:14px 0 0!important;font-size:12px}.stat-import-help{border-top:1px solid var(--line);margin:0!important;padding:0 16px}.stat-import-help>summary,.stat-import-other>summary{padding:10px 0!important;color:var(--muted)}.stat-import-help p{font-size:11px;margin:0 0 10px;line-height:1.7}.stat-import-other .stat-bulk-import{margin:10px 0 0}.stat-import-other .stat-bulk-import summary{font-size:11px;padding:9px!important}.stat-selection-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.stat-selection-head .check{font-size:12px;margin:0!important}#stat-scan-list{border-top:1px solid var(--line)}#stat-scan-panel #stat-scan-add{justify-self:stretch;font-size:13px;padding:10px}#stat-read-dino-file{margin-top:8px}.stat-settings-open{overflow:hidden}#stat-settings-dialog{width:min(720px,calc(100vw - 32px));max-width:720px;max-height:88vh;max-height:88dvh;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);overflow:auto}#stat-settings-dialog::backdrop{background:#03080dcc}.stat-settings-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 22px;background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:1}.stat-settings-head h2{font-size:20px;margin:0 0 4px}.stat-settings-head p{margin:0;font-size:11px}.stat-settings-head button{white-space:nowrap;font-size:12px;padding:7px 10px}.stat-settings-body{padding:20px 22px}.stat-settings-body h3{font-size:16px;margin:0 0 10px}.stat-settings-body .stat-dino-import{padding:16px;margin-bottom:18px}.stat-settings-calculation{padding:0 0 18px;margin:0 0 14px;border-bottom:1px solid var(--line)}.stat-settings-calculation>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px}.stat-settings-calculation>div>p,.stat-settings-calculation #stat-custom-multipliers,.stat-settings-calculation .check{grid-column:1/-1}.stat-settings-calculation>div>p{font-size:11px;margin:0}.stat-settings-body #stat-watch-panel{margin:0}.stat-settings-body input,.stat-settings-body select{font-size:13px}.stat-settings-body #stat-folder-status{font-size:11px;line-height:1.7}@media(max-width:720px){.stat-top-actions{justify-content:flex-start}.stat-import-heading{padding:12px 12px 5px}.stat-import-heading>strong{font-size:14px}.stat-import-heading .stat-text-button{font-size:10px}.stat-import-source{padding:0 12px 10px}.stat-import-shell [role=tabpanel]{padding:12px}.stat-import-buttons{align-items:stretch}.stat-import-buttons>button,.stat-import-buttons>.stat-file-label{flex:1;justify-content:center}.stat-settings-head{padding:14px}.stat-settings-head h2{font-size:18px}.stat-settings-body{padding:14px}.stat-settings-calculation>div{grid-template-columns:minmax(0,1fr)}.stat-settings-head p{max-width:180px}}@media print{.stat-import-shell,.stat-top-actions,#stat-settings-dialog{display:none!important}}
+#stat-folder-once-help[hidden]{display:none!important}#stat-folder-once-help button{margin:10px 0 0;font-size:12px;padding:9px 11px}
+#stat-import-batch[hidden],#stat-folder-files[hidden],#stat-files-picker[hidden]{display:none!important}.stat-top-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}.stat-top-actions button{font-size:12px;padding:9px 12px}.stat-import-shell{border:1px solid var(--line);border-radius:10px;margin-bottom:18px;overflow:hidden;background:#101d25}.stat-import-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:15px 16px 5px}.stat-import-heading>strong{font-size:15px}.stat-text-button{border:0;background:transparent;color:var(--cyan);font-size:12px;padding:4px 0}.stat-text-button:hover{background:transparent;text-decoration:underline}.stat-import-source{padding:0 16px 12px;margin:0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11px;color:var(--muted)}.stat-import-content{padding:16px}.stat-import-description{font-size:12px;color:var(--muted);margin:0 0 12px;line-height:1.6}.stat-import-buttons{display:flex;flex-wrap:wrap;align-items:center;gap:8px}.stat-import-buttons>button,.stat-import-buttons>.stat-file-label{font-size:12px!important;padding:9px 11px!important}.stat-import-shell p[role=status]{margin:10px 0 0;font-size:12px;line-height:1.7;overflow-wrap:anywhere}.stat-import-shell p[role=status]:empty{display:none}.stat-import-help,.stat-import-other{margin:14px 0 0!important;font-size:12px}.stat-import-help{border-top:1px solid var(--line);margin:0!important;padding:0 16px}.stat-import-help>summary,.stat-import-other>summary{padding:10px 0!important;color:var(--muted)}.stat-import-help p{font-size:11px;margin:0 0 10px;line-height:1.7}.stat-import-other .stat-bulk-import{margin:10px 0 0}.stat-import-other .stat-bulk-import summary{font-size:11px;padding:9px!important}.stat-selection-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:12px}.stat-selection-head .check{font-size:12px;margin:0!important}#stat-scan-list{border-top:1px solid var(--line)}#stat-scan-panel #stat-scan-add{justify-self:stretch;font-size:13px;padding:10px}#stat-read-dino-file{margin-top:8px}.stat-settings-open{overflow:hidden}#stat-settings-dialog{width:min(720px,calc(100vw - 32px));max-width:720px;max-height:88vh;max-height:88dvh;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);overflow:auto}#stat-settings-dialog::backdrop{background:#03080dcc}.stat-settings-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 22px;background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:1}.stat-settings-head h2{font-size:20px;margin:0 0 4px}.stat-settings-head p{margin:0;font-size:11px}.stat-settings-head button{white-space:nowrap;font-size:12px;padding:7px 10px}.stat-settings-body{padding:20px 22px}.stat-settings-body h3{font-size:16px;margin:0 0 10px}.stat-settings-body .stat-dino-import{padding:16px;margin-bottom:18px}.stat-settings-calculation{padding:0 0 18px;margin:0 0 14px;border-bottom:1px solid var(--line)}.stat-settings-calculation>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px}.stat-settings-calculation>div>p,.stat-settings-calculation #stat-custom-multipliers,.stat-settings-calculation .check{grid-column:1/-1}.stat-settings-calculation>div>p{font-size:11px;margin:0}.stat-settings-body #stat-watch-panel{margin:0}.stat-settings-body input,.stat-settings-body select{font-size:13px}.stat-settings-body #stat-folder-status{font-size:11px;line-height:1.7}@media(max-width:720px){.stat-top-actions{justify-content:flex-start}.stat-import-heading{padding:12px 12px 5px}.stat-import-heading>strong{font-size:14px}.stat-import-heading .stat-text-button{font-size:10px}.stat-import-source{padding:0 12px 10px}.stat-import-content{padding:12px}.stat-import-buttons{align-items:stretch}.stat-import-buttons>button,.stat-import-buttons>.stat-file-label{flex:1;justify-content:center}.stat-settings-head{padding:14px}.stat-settings-head h2{font-size:18px}.stat-settings-body{padding:14px}.stat-settings-calculation>div{grid-template-columns:minmax(0,1fr)}.stat-settings-head p{max-width:180px}}@media print{.stat-import-shell,.stat-top-actions,#stat-settings-dialog{display:none!important}}
 .stat-library-points strong.stat-best,.stat-library-table td>strong.stat-best{color:#ff767e}#stat-scan-list{max-height:420px;overflow:auto}#stat-scan-selection{display:grid;gap:8px;min-width:0}#stat-scan-selection[hidden],#stat-watch-panel[hidden],#stat-scan-errors[hidden],#stat-scan-folder[hidden],#stat-scan-files[hidden]{display:none!important}#stat-scan-panel .stat-actions{gap:6px}#stat-scan-panel button{font-size:12px;padding:8px 10px}#stat-scan-list small{overflow-wrap:anywhere}#stat-scan-status,#stat-scan-add-status{overflow-wrap:anywhere}
 .stat-bulk-import{margin:0 0 14px;border:1px solid var(--line);border-radius:10px}.stat-bulk-import>summary{padding:10px 12px}.stat-bulk-controls{padding:0 12px 12px;display:grid;gap:8px;min-width:0}.stat-bulk-controls label{min-width:0}.stat-bulk-controls input[type=file]{width:100%;min-width:0;max-width:100%;font-size:13px}.stat-bulk-controls button{justify-self:start;max-width:100%}.stat-bulk-controls p{margin:0;overflow-wrap:anywhere}.stat-bulk-results{list-style:none;padding:0;margin:0;max-height:260px;overflow:auto}.stat-bulk-results:empty{display:none}.stat-bulk-results li{padding:8px 0;border-top:1px solid var(--line);font-size:12px;overflow-wrap:anywhere}.stat-bulk-results strong,.stat-bulk-results small,.stat-bulk-results span{display:block}.stat-bulk-results small{color:var(--muted)}.stat-bulk-results [data-bulk-state=solved] span{color:var(--cyan)}.stat-bulk-results [data-bulk-state=unparsed] span,.stat-bulk-results [data-bulk-state=uncertain] span,.stat-bulk-results [data-bulk-state=failed] span{color:var(--gold)}
 .stat-watch-card{padding:9px 0;border-top:1px solid var(--line);overflow-wrap:anywhere}.stat-watch-card .check{align-items:flex-start;margin:0!important}.stat-watch-card .check span{min-width:0}.stat-watch-card small{display:block;font-size:11px;color:var(--muted)}.stat-watch-card summary{padding:5px 0}.stat-watch-values{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;padding:3px 0 8px}.stat-watch-values strong{color:var(--cyan)}#stat-watch-controls>p{margin:8px 0}#stat-watch-queue{max-height:480px;overflow:auto}#stat-watch-panel .stat-actions{gap:6px}#stat-watch-panel button{font-size:12px;padding:7px 9px}#stat-watch-path,#stat-watch-candidates{width:100%;min-width:0}#stat-watch-status,#stat-library-status{overflow-wrap:anywhere}
+
+#stat-folder-files{margin-top:12px;border-top:1px solid var(--line)}#stat-files-list{max-height:300px;overflow:auto;margin:8px 0 12px;border:1px solid var(--line);border-radius:6px}#stat-files-list .stat-file-choice{display:flex;align-items:flex-start;gap:10px;padding:9px 10px;margin:0;border-bottom:1px solid var(--line);cursor:pointer;color:var(--text);font-size:12px}#stat-files-list .stat-file-choice:last-child{border-bottom:0}#stat-files-list .stat-file-choice:hover{background:#19302c}.stat-file-choice input{margin-top:3px;flex-shrink:0}.stat-file-choice span{min-width:0;overflow-wrap:anywhere}.stat-file-choice strong{display:block;font-size:12px;line-height:1.5}.stat-file-choice small{display:block;color:var(--muted);font-size:10px;line-height:1.5}.stat-file-choice.is-error{cursor:default!important;opacity:.7}#stat-files-read{width:100%;font-size:12px;padding:10px}#stat-import-batch{border-top:1px solid var(--line)}
 
 </style>
 </head>
@@ -119,6 +127,11 @@
 
 
 
+
+
+
+
+
 <!-- stats-panel:start -->
 <section id="stats-panel" class="stats-page" hidden aria-label="個体値チェッカー">
  <div id="stat-editor-page">
@@ -128,17 +141,16 @@
    <div class="stat-import-shell" id="stat-file-import">
     <div class="stat-import-heading"><strong>個体を読み込む</strong></div>
     <p id="stat-import-source" class="meta stat-import-source">未設定の場合は、右上の「設定」から読み込み先を設定してください。</p>
-    <div class="stat-import-tabs" role="tablist" aria-label="ファイルの読み込み方法"><button id="stat-import-single-tab" type="button" role="tab" aria-selected="true" aria-controls="stat-import-single">1体を入力</button><button id="stat-import-batch-tab" type="button" role="tab" aria-selected="false" aria-controls="stat-import-batch" tabindex="-1">まとめて追加</button></div>
-    <div id="stat-import-single" role="tabpanel" aria-labelledby="stat-import-single-tab">
-     <p class="stat-import-description">個体を読み込んで自動計算。確認してから保存できます。</p>
-     <div class="stat-import-buttons"><button id="stat-folder-single-button" class="stat-primary" type="button">設定フォルダーから選ぶ</button></div>
-     <label id="stat-folder-single-label" for="stat-folder-single" hidden>読み込む個体<select id="stat-folder-single"><option value="">選択してください</option></select></label>
+    <div class="stat-import-content">
+     <p class="stat-import-description">1ファイルなら入力して自動計算。複数なら未登録の個体を一覧で確認できます。</p>
+     <div class="stat-import-buttons"><button id="stat-folder-load" class="stat-primary" type="button">設定フォルダーから選ぶ</button></div>
+     <input id="stat-files-picker" type="file" accept=".ini" multiple hidden>
      <p id="stat-dino-file-status" class="meta" role="status"></p>
+     <section id="stat-folder-files" hidden aria-label="読み込むファイルを選択"><div class="stat-selection-head"><label class="check"><input id="stat-files-all" type="checkbox">すべて選択</label><span id="stat-files-count" class="pill">0件選択</span></div><div id="stat-files-list"></div><button id="stat-files-read" class="stat-primary" type="button" disabled>選択したファイルを読み込む</button></section>
     </div>
-    <div id="stat-import-batch" role="tabpanel" aria-labelledby="stat-import-batch-tab" hidden>
+    <div id="stat-import-batch" class="stat-import-content" hidden>
      <section id="stat-scan-panel" class="stat-batch-panel">
       <p class="stat-import-description">登録していない個体を探して、選んだ分だけ保存します。</p>
-      <button id="stat-scan-folder-button" class="stat-primary" type="button">未登録の個体を確認</button>
       
       <p id="stat-scan-status" class="meta" role="status"></p>
       <div id="stat-scan-selection" hidden><div class="stat-selection-head"><label class="check"><input id="stat-scan-all" type="checkbox">すべて選択</label><span id="stat-scan-count" class="pill">0</span></div><div id="stat-scan-list"></div><button id="stat-scan-add" class="stat-primary" type="button" disabled>選択した個体を登録</button></div>
@@ -206,6 +218,7 @@
   <div class="stat-settings-head"><div><h2 id="stat-settings-title">チェッカーの設定</h2><p class="meta">読み込み先と計算条件をここで変更できます。</p></div><button id="stat-settings-close" type="button" aria-label="設定を閉じる">閉じる ×</button></div>
   <div class="stat-settings-body">
    <div class="stat-dino-import" id="stat-folder-settings"><strong>共通の読み込み先</strong><input id="stat-settings-folder-picker" type="file" webkitdirectory multiple hidden><label for="stat-folder-path">エクスポートフォルダー<input id="stat-folder-path" type="text" readonly placeholder="未設定：フォルダーを選んでください"></label><div class="stat-actions"><button id="stat-folder-change" type="button">フォルダーを設定・変更</button><button id="stat-folder-save" type="button" hidden>このパスを保存</button></div><p id="stat-folder-status" class="meta" role="status"></p>
+    <details id="stat-folder-once-help" class="stat-folder-guide"><summary>「このフォルダを開けません」と表示される場合</summary><p class="meta">ブラウザがフォルダーの継続的な読み取りを許可しない場合があります。今回だけ読み込む方法を試せます。</p><button id="stat-folder-once" type="button">今回だけフォルダーを選んで読み込む</button><p class="meta">DinoExportsを選んでください。選択したファイルはこの画面で使えます。新しいエクスポートを確認するときや画面を開き直したときは選び直してください。パスを記憶して繰り返し読む場合はPC版を使います。</p></details>
     <details class="stat-folder-guide" id="stat-folder-guide"><summary>Steamから保存先を見つける</summary>
      <ol>
       <li>Steamの<strong>設定 → ストレージ</strong>で、ARKが入っているドライブを選び、<strong>「…」→「フォルダーを開く」</strong>を押します。</li>
@@ -852,6 +865,11 @@ catalog();plan();
 
 
 
+
+
+
+
+
 <script id="stats-extension">
 /* Species data: cadon/ARKStatsExtractor, with current game-extracted values from Wikily.
 The MIT License (MIT)
@@ -1101,14 +1119,11 @@ let localInitializing=/^(127\.0\.0\.1|localhost)$/.test(location.hostname)&&loca
 const watchCache=new Map(),watchSelection=new Set();
 let scanBusy=false,scanReady=false,scanCandidates=new Map(),bestValues=new Map(),scanTotals={files:0,duplicates:0,problems:0};
 const scanSelection=new Set();
-let folderHandle=null,folderBusy=false,folderPath='',folderPersistent=false,folderIniBlocked=false,folderSingleFiles=[],fallbackFolderFiles=[],fallbackFolderName='';
+let folderHandle=null,folderBusy=false,folderPath='',folderPersistent=false,folderIniBlocked=false,folderFiles=[],fallbackFolderFiles=[],fallbackFolderName='';
+const folderChoices=new Map(),fileSelection=new Set();
 let folderReady=Promise.resolve();
 const folderDBName='ark-export-folder-v1';
-function showImportTab(tab){
- for(const name of ['single','batch']){const active=name===tab;const button=$('stat-import-'+name+'-tab');button.setAttribute('aria-selected',String(active));button.tabIndex=active?0:-1;$('stat-import-'+name).hidden=!active;}
-}
-for(const tab of ['single','batch'])$('stat-import-'+tab+'-tab').addEventListener('click',()=>showImportTab(tab));
-document.querySelector('.stat-import-tabs').addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const tab=e.key==='Home'?'single':e.key==='End'?'batch':$('stat-import-single').hidden?'single':'batch';showImportTab(tab);$('stat-import-'+tab+'-tab').focus();});
+function showImportResult(kind){$('stat-import-batch').hidden=kind!=='batch';}
 function openSettings(){if(!$('stat-settings-dialog').open){$('stat-settings-dialog').showModal();document.body.classList.add('stat-settings-open');}}
 document.querySelectorAll('[data-stat-settings-open]').forEach(b=>b.addEventListener('click',openSettings));
 $('stat-settings-close').addEventListener('click',()=>$('stat-settings-dialog').close());
@@ -1391,7 +1406,7 @@ async function parseDinoFile(file){
  return parsed;
 }
 async function readDinoFile(file){
- if(!file||dinoFileBusy)return;showImportTab('single');dinoFileBusy=true;$('stat-folder-single').disabled=true;
+ if(!file||dinoFileBusy)return;showImportResult('single');dinoFileBusy=true;renderFolder();
  $('stat-dino-file-status').textContent='';
  try{
   const parsed=await parseDinoFile(file);
@@ -1403,7 +1418,7 @@ async function readDinoFile(file){
   for(const [i,v]of Object.entries(parsed.values))if($('stat-value-'+i))$('stat-value-'+i).value=v;
   calculate();
  }catch(e){$('stat-dino-file-status').textContent=e.message;}
- finally{dinoFileBusy=false;$('stat-folder-single').disabled=false;}
+ finally{dinoFileBusy=false;renderFolder();}
 }
 async function addDinoFiles(sourceFiles){
  if(bulkBusy)return;const files=Array.isArray(sourceFiles)?sourceFiles:[];if(!files.length)return;
@@ -1453,11 +1468,11 @@ function renderScan(){
  $('stat-scan-all').checked=items.length>0&&items.every(c=>scanSelection.has(c.parsed.exportId));
  $('stat-scan-all').indeterminate=scanSelection.size>0&&scanSelection.size<items.length;
  $('stat-scan-all').disabled=scanBusy;$('stat-scan-add').disabled=scanBusy||bulkBusy||!scanSelection.size;
- $('stat-scan-folder-button').disabled=scanBusy||folderBusy;
+ renderFolder();
 }
 async function scanDinoFiles(files){
  if(scanBusy||bulkBusy)return;const exports=[...files].filter(f=>/\.ini$/i.test(f.name));
- showImportTab('batch');
+ showImportResult('batch');
  if(exports.length>10000){$('stat-scan-status').textContent='1回に確認できる .ini は10,000ファイルまでです。対象のフォルダーを絞ってください。';return;}
  scanBusy=true;scanReady=false;scanCandidates=new Map();scanSelection.clear();const problems=[];let duplicates=0;
  $('stat-scan-add-status').textContent='';$('stat-scan-results').innerHTML='';$('stat-scan-errors').hidden=true;renderScan();
@@ -1467,7 +1482,7 @@ async function scanDinoFiles(files){
    if(i%16===0)await new Promise(resolve=>setTimeout(resolve,0));
    try{
     const parsed=await parseDinoFile(file);
-    if(!parsed.exportId)throw Error('ゲームの個体IDがないため未登録か判定できません。単体入力から確認・登録してください。');
+    if(!parsed.exportId)throw Error('ゲームの個体IDがないため未登録か判定できません。このファイルだけを選んで読み込み、確認・保存してください。');
     const existing=scanCandidates.get(parsed.exportId);if(existing)duplicates++;
     if(!existing||file.lastModified>=existing.file.lastModified)scanCandidates.set(parsed.exportId,{file,parsed});
    }catch(e){problems.push({file:file.webkitRelativePath||file.name,message:e.message});}
@@ -1475,9 +1490,9 @@ async function scanDinoFiles(files){
   $('stat-scan-errors').hidden=!problems.length;
   $('stat-scan-error-list').innerHTML=problems.slice(0,100).map(p=>`<li><strong>${esc(p.file)}</strong><span>${esc(p.message)}</span></li>`).join('')+(problems.length>100?`<li>ほか ${problems.length-100} 件</li>`:'');
   scanTotals={files:exports.length,duplicates,problems:problems.length};scanReady=true;
+  const registered=new Set(library.map(r=>r.exportId).filter(Boolean));for(const id of scanCandidates.keys())if(!registered.has(id))scanSelection.add(id);
  }finally{scanBusy=false;renderScan();}
 }
-$('stat-scan-folder-button').addEventListener('click',()=>useFolder('scan'));
 $('stat-scan-list').addEventListener('change',e=>{const id=e.target.dataset.scanId;if(!id||scanBusy)return;e.target.checked?scanSelection.add(id):scanSelection.delete(id);renderScan();});
 $('stat-scan-all').addEventListener('change',()=>{if(scanBusy)return;const checked=$('stat-scan-all').checked,registered=new Set(library.map(r=>r.exportId).filter(Boolean));for(const id of scanCandidates.keys())if(!registered.has(id))checked?scanSelection.add(id):scanSelection.delete(id);renderScan();});
 $('stat-scan-add').addEventListener('click',async()=>{
@@ -1499,15 +1514,20 @@ function folderStorage(value){
 }
 function renderFolder(){
  const native=!!localSession;$('stat-folder-path').readOnly=!native;$('stat-folder-save').hidden=!native;
+ $('stat-folder-once-help').hidden=native;
  $('stat-folder-path').value=native?folderPath:folderHandle?.name||fallbackFolderName;
  $('stat-folder-change').textContent=native?'パスを変更':'フォルダーを設定・変更';
- if(native)$('stat-folder-status').textContent=folderPath?'このパスを単体読み込み・未登録確認・一括選択で共用します。変更するまで保存されます。':'フォルダーの絶対パスを入力して保存してください。';
+ if(native)$('stat-folder-status').textContent=folderPath?'このパスから個体を選べます。1件・複数件とも同じ読み込み先を使い、変更するまで保存されます。':'フォルダーの絶対パスを入力して保存してください。';
  else if(folderHandle)$('stat-folder-status').textContent=(folderPersistent?'フォルダーを記憶しました。次回も同じ読み込み先を使います。':'この画面では同じフォルダーを再利用できます。設定を保存できなかったため、画面を開き直したら再設定してください。')+(folderIniBlocked?'このブラウザでは .ini の自動一覧が制限されます。設定フォルダーを開いたファイル選択から読み込んでください。':'ブラウザから確認が出たら読み取りを許可してください。');
  else if(fallbackFolderFiles.length)$('stat-folder-status').textContent='この画面では選んだフォルダーを再利用できます。新しいエクスポートを確認するときや、画面を開き直したときはここで選び直してください。';
  else $('stat-folder-status').textContent=typeof showDirectoryPicker==='function'?'最初に読み込み先を選ぶと記憶します。設定を変更するまで共用します。':'このブラウザではフォルダーの記憶に対応していません。都度選択するか、PCのChrome・Edgeで開いてください。';
  const source=native?folderPath:folderHandle?.name||fallbackFolderName;$('stat-import-source').textContent=source?'読み込み先：'+source:'未設定の場合は、右上の「設定」から読み込み先を設定してください。';$('stat-import-source').title=source;
  $('stat-import-source').classList.toggle('is-unset',!source);
- for(const id of ['stat-folder-save','stat-folder-change','stat-folder-single-button','stat-scan-folder-button'])$(id).disabled=folderBusy||scanBusy||bulkBusy;
+ const busy=folderBusy||scanBusy||bulkBusy||dinoFileBusy;
+ for(const id of ['stat-folder-save','stat-folder-change','stat-folder-once','stat-folder-load'])$(id).disabled=busy;
+ $('stat-files-read').disabled=busy||!fileSelection.size;
+ $('stat-files-all').disabled=busy||!folderChoices.size;
+ for(const input of $('stat-files-list').querySelectorAll('[data-file-index]'))input.disabled=busy;
 }
 async function restoreFolder(){
  try{const h=await folderStorage();if(h?.kind==='directory'){folderHandle=h;folderPersistent=true;}}catch{}
@@ -1515,19 +1535,19 @@ async function restoreFolder(){
 }
 async function pickFolder(){
  const next=await showDirectoryPicker({id:'ark-dino-exports',mode:'read',...(folderHandle?{startIn:folderHandle}:{})});
- folderHandle=next;folderPersistent=false;folderIniBlocked=false;folderSingleFiles=[];$('stat-folder-single-label').hidden=true;
- try{await folderStorage(next);folderPersistent=true;}catch{}
+ let saved=false;try{await folderStorage(next);saved=true;}catch{}
+ folderHandle=next;folderPersistent=saved;folderIniBlocked=false;clearFileChoices();
  renderFolder();
 }
-async function configuredFiles(action){
+async function configuredFiles(){
  if(localSession){
   const listing=await localAPI('/folder/list');folderPath=listing.path;renderFolder();
-  return listing.files.map(f=>({name:f.name.split('/').pop(),webkitRelativePath:f.name,size:f.size,lastModified:f.modified,arrayBuffer:async()=>{
+  return {files:listing.files.map(f=>({name:f.name.split('/').pop(),webkitRelativePath:f.name,size:f.size,lastModified:f.modified,arrayBuffer:async()=>{
    const response=await fetch('/api/local/folder/file?name='+encodeURIComponent(f.name),{headers:{'X-Ark-Token':localSession.token},cache:'no-store'});
    if(!response.ok){let e;try{e=await response.json();}catch{}throw Error(e?.error||'ファイルを読み取れません。');}return response.arrayBuffer();
-  }}));
+  }})),selected:false};
  }
- if(!folderHandle&&fallbackFolderFiles.length)return fallbackFolderFiles;
+ if(!folderHandle&&fallbackFolderFiles.length)return {files:fallbackFolderFiles,selected:false};
  if(!folderHandle)await pickFolder();
  if(await folderHandle.queryPermission({mode:'read'})!=='granted'&&await folderHandle.requestPermission({mode:'read'})!=='granted')throw Error('設定したフォルダーの読み取りを許可してください。');
  // Chromium on Windows blocks .ini descendants even in a permitted directory.
@@ -1536,9 +1556,9 @@ async function configuredFiles(action){
  catch(e){if(e.name==='NotFoundError')folderIniBlocked=false;else if(e.name==='TypeError')folderIniBlocked=true;else throw e;}
  if(folderIniBlocked){
   renderFolder();
-  if(typeof showOpenFilePicker!=='function')throw Error('このブラウザでは .ini を自動列挙できません。右上の「設定」でフォルダーを選び直してください。');
-  const handles=await showOpenFilePicker({id:'ark-export-files',startIn:folderHandle,multiple:action!=='single',types:[{description:'恐竜エクスポート',accept:{'text/plain':['.ini']}}]});
-  return Promise.all(handles.map(async h=>{const f=await h.getFile();return {name:f.name,size:f.size,lastModified:f.lastModified,arrayBuffer:async()=>(await h.getFile()).arrayBuffer()};}));
+  if(typeof showOpenFilePicker!=='function'){$('stat-files-picker').click();return null;}
+  const handles=await showOpenFilePicker({id:'ark-export-files',startIn:folderHandle,multiple:true,types:[{description:'恐竜エクスポート',accept:{'text/plain':['.ini']}}]});
+  return {files:await Promise.all(handles.map(async h=>{const f=await h.getFile();return {name:f.name,size:f.size,lastModified:f.lastModified,arrayBuffer:async()=>(await h.getFile()).arrayBuffer()};})),selected:true};
  }
  const files=[],pending=[{handle:folderHandle,path:folderHandle.name}],seenLimit=10000;let entries=0;
  while(pending.length){
@@ -1552,47 +1572,65 @@ async function configuredFiles(action){
    }
   }
  }
- return files.sort((a,b)=>a.webkitRelativePath.localeCompare(b.webkitRelativePath,'ja'));
+ return {files:files.sort((a,b)=>a.webkitRelativePath.localeCompare(b.webkitRelativePath,'ja')),selected:false};
 }
-async function useFolder(action){
+function clearFileChoices(){folderFiles=[];folderChoices.clear();fileSelection.clear();$('stat-folder-files').hidden=true;$('stat-files-list').innerHTML='';updateFileSelection();}
+function updateFileSelection(){
+ $('stat-files-count').textContent=fileSelection.size+'件選択';
+ $('stat-files-all').checked=folderChoices.size>0&&fileSelection.size===folderChoices.size;
+ $('stat-files-all').indeterminate=fileSelection.size>0&&fileSelection.size<folderChoices.size;
+ $('stat-files-read').textContent=fileSelection.size===1?'この個体を読み込んで計算':fileSelection.size>1?fileSelection.size+'ファイルを読み込む':'選択したファイルを読み込む';
+ renderFolder();
+}
+async function showFileChoices(files){
+ clearFileChoices();folderFiles=[...files].filter(f=>/\.ini$/i.test(f.name));const rows=[],registered=new Set(library.map(r=>r.exportId).filter(Boolean));
+ for(let i=0;i<folderFiles.length;i++){
+  if(i%16===0){$('stat-dino-file-status').textContent=`個体名を読み取り中… ${i+1} / ${folderFiles.length}`;await new Promise(resolve=>setTimeout(resolve,0));}
+  const file=folderFiles[i],fileName=file.webkitRelativePath||file.name;
+  try{
+   const parsed=await parseDinoFile(file),s=byId.get(parsed.species);folderChoices.set(i,parsed);
+   rows.push(`<label class="stat-file-choice"><input type="checkbox" data-file-index="${i}"><span><strong>${esc(parsed.name||'名前なし')} / ${esc(s.ja+(s.variants.length?'（'+s.variants.join(' / ')+'）':''))}</strong><small>Lv ${parsed.level}${registered.has(parsed.exportId)?' · 登録済み':''}</small></span></label>`);
+  }catch(e){rows.push(`<div class="stat-file-choice is-error"><span><strong>読み込み不可</strong><small>${esc(fileName)}：${esc(e.message)}</small></span></div>`);}
+ }
+ $('stat-files-list').innerHTML=rows.join('');$('stat-folder-files').hidden=!folderFiles.length;
+ $('stat-dino-file-status').textContent=folderFiles.length?(folderFiles.length>folderChoices.size?`読み込み不可 ${folderFiles.length-folderChoices.size}件。`:''):'設定フォルダーに .ini がありません。';
+ updateFileSelection();
+}
+async function importSelectedFiles(files){
+ const exports=[...files].filter(f=>/\.ini$/i.test(f.name));if(exports.length>10000){$('stat-dino-file-status').textContent='1回に読み込める .ini は10,000ファイルまでです。';return;}if(!exports.length){$('stat-dino-file-status').textContent='.ini ファイルを選んでください。';return;}
+ $('stat-dino-file-status').textContent='';
+ if(exports.length===1){await readDinoFile(exports[0]);if(!$('stat-dino-file-status').textContent)$('stat-folder-files').hidden=true;}
+ else{await scanDinoFiles(exports);$('stat-folder-files').hidden=true;}
+}
+async function useFolder(){
  if(folderBusy||scanBusy||bulkBusy||dinoFileBusy)return;
- if(!localInitializing&&!(localSession?folderPath:folderHandle||fallbackFolderFiles.length)){$(action==='single'?'stat-dino-file-status':'stat-scan-status').textContent='右上の「設定」から読み込み先を設定してください。';return;}
- folderBusy=true;renderFolder();const status=action==='single'?'stat-dino-file-status':'stat-scan-status';$(status).textContent='設定フォルダーを確認中…';
+ if(!localInitializing&&!(localSession?folderPath:folderHandle||fallbackFolderFiles.length)){$('stat-dino-file-status').textContent='右上の「設定」から読み込み先を設定してください。';return;}
+ folderBusy=true;renderFolder();const status=$('stat-dino-file-status');status.textContent='設定フォルダーを確認中…';
  try{
   await folderReady;if(localInitializing)throw Error('PCの設定を読み込み中です。少し待ってからもう一度押してください。');
-  const files=await configuredFiles(action);
-  if(action==='single'){
-   $('stat-folder-single-label').hidden=true;folderSingleFiles=files;const options=[],readable=new Set();
-   for(let i=0;i<files.length;i++){
-    if(i%16===0){$(status).textContent=`個体名を読み取り中… ${i+1} / ${files.length}`;await new Promise(resolve=>setTimeout(resolve,0));}
-    const f=files[i];
-    try{
-     const p=await parseDinoFile(f),s=byId.get(p.species),speciesName=s.ja+(s.variants.length?'（'+s.variants.join(' / ')+'）':'');
-     options.push(`<option value="${i}" title="${esc(f.webkitRelativePath||f.name)}">${esc(p.name||'名前なし')} / ${esc(speciesName)}</option>`);readable.add(i);
-    }catch(e){options.push(`<option value="${i}" disabled title="${esc(f.webkitRelativePath||f.name)}：${esc(e.message)}">読み込み不可（${i+1}件目）</option>`);}
-   }
-   $('stat-folder-single').innerHTML='<option value="">選択してください</option>'+options.join('');$('stat-folder-single-label').hidden=!files.length;
-   $(status).textContent=files.length?(files.length>readable.size?`読み込み不可 ${files.length-readable.size}件。`:''):'設定フォルダーに .ini がありません。';
-   if(folderIniBlocked&&files.length===1&&readable.has(0)){$('stat-folder-single').value='0';await readDinoFile(files[0]);}
-  }else{
-   $('stat-scan-panel').open=true;await scanDinoFiles(files);
-  }
- }catch(e){if(e.name==='AbortError')$(status).textContent='フォルダー選択をキャンセルしました。';else $(status).textContent=e.message||'フォルダーを読み取れません。設定を変更してください。';}
+  const source=await configuredFiles();if(!source){status.textContent='';return;}
+  if(source.selected||source.files.filter(f=>/\.ini$/i.test(f.name)).length===1)await importSelectedFiles(source.files);
+  else{showImportResult('single');await showFileChoices(source.files);}
+ }catch(e){status.textContent=e.name==='AbortError'?'ファイル・フォルダー選択をキャンセルしました。':e.message||'フォルダーを読み取れません。設定を変更してください。';}
  finally{folderBusy=false;renderFolder();}
 }
 $('stat-folder-change').addEventListener('click',async()=>{
  if(folderBusy||scanBusy||bulkBusy)return;if(localSession){$('stat-folder-path').focus();$('stat-folder-path').select();return;}
  if(typeof showDirectoryPicker!=='function'){$('stat-settings-folder-picker').click();return;}
- folderBusy=true;let error='';try{await pickFolder();}catch(e){if(e.name!=='AbortError')error=e.message;}finally{folderBusy=false;renderFolder();if(error)$('stat-folder-status').textContent=error;}
+ folderBusy=true;let error='';try{await pickFolder();}catch(e){$('stat-folder-once-help').open=true;error=e.name==='AbortError'?'フォルダー選択をキャンセルしたか、ブラウザに読み取りを拒否されました。「このフォルダを開けません」と出た場合は、下の今回だけ読み込む方法を試してください。':e.message;}finally{folderBusy=false;renderFolder();if(error)$('stat-folder-status').textContent=error;}
 });
 $('stat-folder-save').addEventListener('click',async()=>{
  if(!localSession||folderBusy||scanBusy||bulkBusy)return;const path=$('stat-folder-path').value;
- folderBusy=true;$('stat-folder-save').disabled=true;try{const saved=await localAPI('/folder/config',{path});folderPath=saved.path;folderSingleFiles=[];$('stat-folder-single-label').hidden=true;renderFolder();}
+ folderBusy=true;$('stat-folder-save').disabled=true;try{const saved=await localAPI('/folder/config',{path});folderPath=saved.path;clearFileChoices();renderFolder();}
  catch(e){$('stat-folder-status').textContent=e.message;}finally{folderBusy=false;$('stat-folder-save').disabled=false;}
 });
-$('stat-folder-single-button').addEventListener('click',()=>useFolder('single'));
-$('stat-settings-folder-picker').addEventListener('change',e=>{const files=[...e.target.files];if(!files.length)return;fallbackFolderFiles=files;fallbackFolderName=files[0].webkitRelativePath.split('/')[0];folderHandle=null;folderPersistent=false;folderSingleFiles=[];$('stat-folder-single-label').hidden=true;renderFolder();e.target.value='';});
-$('stat-folder-single').addEventListener('change',()=>{const value=$('stat-folder-single').value;if(value!==''&&folderSingleFiles[Number(value)])readDinoFile(folderSingleFiles[Number(value)]);});
+$('stat-folder-load').addEventListener('click',useFolder);
+$('stat-folder-once').addEventListener('click',()=>{if(!folderBusy&&!scanBusy&&!bulkBusy)$('stat-settings-folder-picker').click();});
+$('stat-settings-folder-picker').addEventListener('change',e=>{const files=[...e.target.files];if(!files.length)return;fallbackFolderFiles=files;fallbackFolderName=files[0].webkitRelativePath.split('/')[0];folderHandle=null;folderPersistent=false;clearFileChoices();renderFolder();e.target.value='';});
+$('stat-files-picker').addEventListener('change',async e=>{const files=[...e.target.files];e.target.value='';if(files.length)await importSelectedFiles(files);});
+$('stat-files-list').addEventListener('change',e=>{if(!e.target.matches('[data-file-index]'))return;const i=Number(e.target.dataset.fileIndex);if(!folderChoices.has(i))return;e.target.checked?fileSelection.add(i):fileSelection.delete(i);updateFileSelection();});
+$('stat-files-all').addEventListener('change',e=>{fileSelection.clear();for(const i of folderChoices.keys())if(e.target.checked)fileSelection.add(i);for(const input of $('stat-files-list').querySelectorAll('[data-file-index]'))input.checked=e.target.checked;updateFileSelection();});
+$('stat-files-read').addEventListener('click',async()=>{if(folderBusy||scanBusy||bulkBusy||dinoFileBusy)return;const files=[...fileSelection].map(i=>folderFiles[i]);if(!files.length)return;folderBusy=true;renderFolder();try{await importSelectedFiles(files);}finally{folderBusy=false;renderFolder();}});
 async function localAPI(route,data){
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),10000);
  try{
